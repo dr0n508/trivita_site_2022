@@ -1,5 +1,6 @@
 @import "vars";
 @import "fonts";
+@import "inputs";
 @import "header";
 @import "footer";
 
@@ -50,7 +51,10 @@ body {
 
 .main {
 	flex: 1 0 auto;
-	padding-top: 190px;
+	padding-top: 249px;
+  @media (max-width: 992px) {
+    padding-top: 72px;
+  }
 }
 .footer {
 	flex: 0 0 auto;
@@ -133,6 +137,23 @@ button, .btn {
 }
 
 
+.show-mobile {
+  display: none;
+}
+
+
+@media (max-width: 992px) {
+  .hidden-mobile {
+    display: none;
+  }
+  .show-mobile {
+    display: block;
+  }
+}
+
 
 
 @import "media"; /* Always at the end*/
+
+
+
