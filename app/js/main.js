@@ -30,6 +30,32 @@
 		}
 	});
 
+
+
+
+
+//search mobile
+
+
+$('.submit-search').on('click', function(){
+    if ($(window).width() <= 991) {
+
+        $('.wrap-search-input').toggleClass('active');
+        $('.wrap-search-input input').focus();
+
+
+
+
+
+    }
+});
+
+
+
+
+
+
+
 // Custom select
 $('.current_option').on('click', function(){
 	if (!$(this).closest('.select').hasClass('active')) {
