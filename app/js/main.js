@@ -38,18 +38,24 @@
 
 $('.acc-title').click(function(e) {
 
-    var dropDown = $(this).closest('.acc-card').find('.acc-panel');
-    $(this).closest('.acc').find('.acc-panel').not(dropDown).slideUp();
+    if ($(window).width() <= 991) {
 
-    if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-    } else {
-        $(this).closest('.acc').find('.acc-title.active').removeClass('active');
-        $(this).addClass('active');
+        var dropDown = $(this).closest('.acc-card').find('.acc-panel');
+        $(this).closest('.acc').find('.acc-panel').not(dropDown).slideUp();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.acc').find('.acc-title.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+        e.preventDefault();
+
     }
 
-    dropDown.stop(false, true).slideToggle();
-    e.preventDefault();
+
 });
 
 
