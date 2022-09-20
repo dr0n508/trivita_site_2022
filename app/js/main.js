@@ -8,6 +8,7 @@
 	$(document).on('click', function(e) {
 		if (!$(e.target).closest('.menu_wrap').length) {
 			$('.burger').removeClass('active');
+            $('.wrap-search-input').removeClass('active');
 			$('.menu_content').removeClass('active');
 			$('body').removeClass('no_scroll');
 			if ($(window).width() <= 991) {

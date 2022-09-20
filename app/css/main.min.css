@@ -1,9 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap");
 .header {
   -webkit-box-flex: 0;
@@ -124,7 +120,7 @@
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #282828;
+    background: #171B27;
     -webkit-border-radius: 4px;
             border-radius: 4px;
     opacity: 1;
@@ -192,17 +188,17 @@
     .custom-search .wrap-search-input.active input {
       color: white; }
     .custom-search .wrap-search-input.active input::-webkit-input-placeholder {
-      color: white; }
+      color: gainsboro; }
     .custom-search .wrap-search-input.active input::-moz-placeholder {
-      color: white; }
+      color: gainsboro; }
     .custom-search .wrap-search-input.active input::-ms-input-placeholder {
-      color: white; }
+      color: gainsboro; }
     .custom-search .wrap-search-input.active input::placeholder {
-      color: white; }
+      color: gainsboro; }
     .custom-search .wrap-search-input.active input:-ms-input-placeholder {
-      color: white; }
+      color: gainsboro; }
     .custom-search .wrap-search-input.active input::-ms-input-placeholder {
-      color: white; }
+      color: gainsboro; }
 
 .menu_content {
   display: -webkit-box;
@@ -214,7 +210,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 30px;
+  margin-top: 10px;
   border-top: solid 1px #737989; }
 
 .nav {
@@ -277,7 +273,8 @@
           align-items: center; }
 
 .logo img {
-  width: 235px; }
+  width: 235px;
+  margin-bottom: 20px; }
 
 @media (min-width: 992px) {
   .nav_item:hover {
@@ -376,19 +373,19 @@
             justify-content: space-between; }
 
 ::-webkit-input-placeholder {
-  color: #686868; }
+  color: #465377; }
 
 ::-moz-placeholder {
-  color: #686868; }
+  color: #465377; }
 
 :-ms-input-placeholder {
-  color: #686868; }
+  color: #465377; }
 
 ::-ms-input-placeholder {
-  color: #686868; }
+  color: #465377; }
 
 ::placeholder {
-  color: #686868; }
+  color: #465377; }
 
 ::-moz-selection {
   background-color: #1B75BB;
@@ -413,7 +410,7 @@ body {
   min-width: 320px;
   position: relative;
   font-family: "M PLUS 1", sans-serif;
-  color: #282828;
+  color: #171B27;
   overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;

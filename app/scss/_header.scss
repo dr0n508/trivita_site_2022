@@ -167,13 +167,13 @@
       color: white;
     }
     input::placeholder {
-      color: white;
+      color: gainsboro;
     }
     input:-ms-input-placeholder  {
-      color: white;
+      color: gainsboro;
     }
     input::-ms-input-placeholder {
-      color: white;
+      color: gainsboro;
     }
   }
 }
@@ -183,7 +183,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 10px;
   border-top: solid 1px #737989;
 }
 .nav {
@@ -248,6 +248,7 @@
 .logo {
   img {
     width: 235px;
+    margin-bottom: 20px;
   }
 }
 
