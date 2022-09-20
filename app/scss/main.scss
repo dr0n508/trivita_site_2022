@@ -1,8 +1,11 @@
+@import "grid/main";
 @import "vars";
 @import "fonts";
 @import "inputs";
 @import "header";
 @import "footer";
+@import "elements/accordion";
+
 
 ::-webkit-input-placeholder {
 	color: lighten($text, 25%);
@@ -136,11 +139,14 @@ button, .btn {
 	padding-right: 15px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 
 .show-mobile {
   display: none;
 }
-
 
 @media (max-width: 992px) {
   .hidden-mobile {

@@ -1,9 +1,33 @@
 /*-- FOOTER --*/
 .footer {
-  background: #32373c;
+  background: #171B27;
   color: #fff;
   .container {
+    //display: flex;
+    //justify-content: space-between;
+  }
+
+  .footer-logo {
+    width: 216px;
+    margin-bottom: 24px;
+
+  }
+
+  .logo-wrapper {
     display: flex;
-    justify-content: space-between;
+    margin-top: 55px;
+    .gmp-logo {
+      width: 120px;
+    }
+    .bbb-logo {
+      width: 104px;
+      margin-left: 30px;
+    }
+  }
+
+  .social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
