@@ -1,21 +1,41 @@
-.button-gradient {
+.btn-accent {
   padding: 18px 60px;
   display: inline-block;
+  text-align: center;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.04em;
+  border-radius: 8px;
+  min-width: 230px;
+
+}
+
+.btn-gradient {
+  text-align: center;
   color: white;
   box-shadow: 0px 4px 14px 0px #94B38199;
-  border-radius: 8px;
   background: linear-gradient(97.93deg, #76B74B -2.23%, #438D13 105.8%);
+  min-width: 230px;
   &:hover {
     color: white;
     background: linear-gradient(97.93deg, #438D13 -2.23%, #76B74B 105.8%);
   }
 }
 
+.btn-transparent {
+  color: $accent-text;
+  border: solid 2px $accent-text;
+  &:hover {
+    color: white;
+    background: $accent-text;
+    span:before {
+      color: white;
+    }
+  }
+}
+
 @media (max-width: 991px) {
-  .button-gradient {
+  .btn-accent {
     font-size: 14px;
     padding: 16px 32px;
   }

@@ -107,6 +107,26 @@ $('.top-product-slider').slick({
 
 });
 
+$('.slider-stories').slick({
+    autoplay: false,
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.pixoff-slider-navigation-anchor .slick-prev'),
+    nextArrow: $('.pixoff-slider-navigation-anchor .slick-next')
+
+
+
+});
+
+
+
+
+
+
 
 //search mobile
 
