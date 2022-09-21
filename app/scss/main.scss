@@ -1,12 +1,18 @@
 @import "grid/main";
+
+@import "../js/slick/slick.css";
+@import "../js/slick/slick-theme.css";
+
 @import "vars";
 @import "fonts";
 @import "inputs";
 @import "elements/accordion";
 @import "elements/buttons";
 @import "elements/typography";
+@import "elements/sliders";
 @import "header";
 @import "footer";
+
 
 
 ::-webkit-input-placeholder {
@@ -16,8 +22,6 @@
 	color: lighten($text, 25%);
 }
 :-ms-input-placeholder {
-
-
 	color: lighten($text, 25%);
 }
 ::-ms-input-placeholder {
@@ -44,7 +48,7 @@ html, body {
 }
 body {
 	font-size: 16px;
-	font-weight: 300;
+	font-weight: 500;
 	min-width: 320px;
 	position: relative;
 	font-family: $default;
@@ -110,8 +114,8 @@ button, .btn {
 	font-weight: bold;
 	@extend.animate;
 	&:hover {
-		background: $bg;
-		color: #ffffff;
+		//background: $bg;
+		//color: #ffffff;
 	}
 }
 .animate {
@@ -225,7 +229,6 @@ button, .btn {
   p {
     margin-bottom: 20px;
   }
-
   .wrapper-image {
     position: relative;
     margin-bottom: 16px;
@@ -298,10 +301,127 @@ button, .btn {
     position: relative;
     display: block;
   }
+  @media (max-width: 991px) {
+    padding: 30px 0;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .button-gradient {
+      margin-bottom: 12px;
+    }
+  }
 }
 
 .top-product-section {
   padding: 60px 0;
+  .product-cart {
+    position: relative;
+    border-radius: 12px;
+    cursor: pointer;
+    &:after {
+      content: "";
+      border-radius: 12px;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0px 7px 10px 3px #b5b5b533;
+      opacity: 0;
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .wrapper {
+      padding: 10px;
+    }
+    .image-block {
+      display: block;
+      position: relative;
+      padding-top: 100%;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+    .title {
+      padding: 16px 0;
+      font-size: 24px;
+      font-weight: 700;
+      color: $text;
+    }
+    .details p {
+      font-size: 16px;
+      color: #5F667A;
+      margin-bottom: 12px;
+    }
+    .price {
+      font-size: 16px;
+      color: $accent-text;
+    }
+    .button-product-cart {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 58px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,0.6);
+      border-radius: 8px;
+      &:hover {
+        background: rgba(255,255,255,0.9);
+      }
+
+
+    }
+    .more-info-block {
+      margin-top: 10px;
+      display: block;
+      position: relative;
+      width: 100%;
+      list-style: none;
+      line-height: 2em;
+      opacity: 0;
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      .wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          color: $accent-text;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 400;
+          margin-left: 10px;
+        }
+      }
+    }
+    &:hover {
+      .more-info-block {
+        max-height: 200px;
+        opacity: 1;
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+
 }
 
 
