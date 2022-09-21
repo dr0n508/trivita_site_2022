@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="60"
+   height="50"
+   viewBox="0 0 60 50"
+   fill="none"
+   version="1.1"
+   id="svg1245"
+   sodipodi:docname="quotes2.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1249" />
+  <sodipodi:namedview
+     id="namedview1247"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.72"
+     inkscape:cx="30.190678"
+     inkscape:cy="25"
+     inkscape:window-width="1309"
+     inkscape:window-height="456"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1245" />
+  <path
+     d="M46.2774 -1.19967e-06C50.7543 -8.08289e-07 54.1606 1.69082 56.4964 5.07246C58.8321 8.45411 60 13.0918 60 18.9855C60 25.8454 58.2968 31.8841 54.8905 37.1015C51.4842 42.3188 46.2774 46.6184 39.2701 50L34.5985 40.7246C38.9781 38.599 42.2871 36.0386 44.5255 33.0435C46.6667 30.1449 47.7372 26.57 47.7372 22.3188C47.5426 22.4155 47.2993 22.4638 47.0073 22.4638C46.7153 22.4638 46.472 22.4638 46.2774 22.4638C43.163 22.4638 40.5353 21.4976 38.3942 19.5652C36.1557 17.7295 35.0365 15.1691 35.0365 11.8841C35.0365 8.30917 36.1071 5.41062 38.2482 3.1884C40.3893 1.0628 43.0657 -1.48044e-06 46.2774 -1.19967e-06ZM11.6788 -4.22437e-06C16.1557 -3.83299e-06 19.562 1.69082 21.8978 5.07246C24.2336 8.4541 25.4015 13.0918 25.4015 18.9855C25.4015 25.8454 23.6983 31.8841 20.292 37.1014C16.8856 42.3188 11.6788 46.6184 4.67153 50L8.10878e-07 40.7246C4.37956 38.599 7.68856 36.0386 9.927 33.0435C12.0681 30.1449 13.1387 26.57 13.1387 22.3188C12.944 22.4155 12.7007 22.4638 12.4088 22.4638C12.1168 22.4638 11.8735 22.4638 11.6788 22.4638C8.56447 22.4638 5.93674 21.4976 3.79562 19.5652C1.55718 17.7295 0.437961 15.1691 0.437961 11.884C0.437961 8.30917 1.50852 5.41062 3.64964 3.1884C5.79076 1.06279 8.46715 -4.50515e-06 11.6788 -4.22437e-06Z"
+     fill="#1B75BB"
+     id="path1285" />
+</svg>

@@ -122,6 +122,40 @@ $('.slider-stories').slick({
 
 });
 
+$('.home-slider-blog').slick({
+    autoplay: false,
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.home-slider-blog-navigation .slick-prev'),
+    nextArrow: $('.home-slider-blog-navigation .slick-next'),
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                arrows: false,
+
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                arrows: false,
+                dots: true,
+            }
+        },
+
+
+    ]
+
+
+
+});
+
 
 
 

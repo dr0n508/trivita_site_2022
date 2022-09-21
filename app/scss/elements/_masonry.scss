@@ -1,0 +1,42 @@
+.masonry {
+  .m {
+    display: flex;
+    flex-direction: column;
+    max-height: 1200px;
+    flex-wrap: wrap;
+    .ww {
+      padding: 7px;
+    }
+    .w {
+      //margin: 10px;
+      background-color: red;
+      width: 100%;
+      height: 100%;
+    }
+    .ww:nth-child(1) {
+      height: 493px;
+      width: 33.33%;
+      background: u;
+    }
+    .ww:nth-child(2) {
+      height: 593px;
+      width: 33.33%;
+    }
+    .ww:nth-child(3) {
+      height: 593px;
+      width: 33.33%;
+    }
+    .ww:nth-child(4) {
+      height: 493px;
+      width: 33.33%;
+    }
+    .ww:nth-child(5) {
+      height: 493px;
+      width: 33.33%;
+    }
+    .ww:nth-child(6) {
+      height: 593px;
+      width: 33.33%;
+    }
+  }
+}
