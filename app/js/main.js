@@ -76,7 +76,7 @@ $('.acc-title').click(function(e) {
 $('.top-product-slider').slick({
     autoplay: false,
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -88,14 +88,14 @@ $('.top-product-slider').slick({
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                infinite: true,
-                dots: true
+                infinite: false,
             }
         },
         {
             breakpoint: 600,
             settings: {
-                centerMode: true,
+                arrows: false,
+                // centerMode: true,
                 centerPadding: '60px',
                 slidesToShow: 1,
                 slidesToScroll: 1

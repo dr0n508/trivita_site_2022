@@ -1109,38 +1109,56 @@ h1.header-section {
     margin-bottom: 16px; } }
 
 .slick-list {
-  margin: 0 40px; }
+  margin: 0 60px; }
+  @media (max-width: 600px) {
+    .slick-list {
+      margin: 0 0;
+      padding: 0 20% 0 0 !important; } }
 
-.slick-prev, .slick-next {
+.slick-next,
+.slick-prev {
   top: 30%; }
-  .slick-prev:before, .slick-next:before {
+  .slick-next:before,
+  .slick-prev:before {
     content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid; }
+    width: 60px;
+    height: 60px;
+    background-color: #1B75BB;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .slick-next:hover:before,
+  .slick-prev:hover:before {
+    background-color: #47a7e3; }
 
 .slick-next {
-  right: 0; }
+  right: 20px; }
   .slick-next:before {
-    border-width: 15px 0 15px 16px;
-    border-color: transparent transparent transparent #C4C4C4; }
-  .slick-next:hover:before {
-    border-color: transparent transparent transparent #1B75BB; }
+    content: url("../../img/icon/arr-right-white.svg"); }
 
 .slick-prev {
-  left: 0; }
+  left: -20px; }
   .slick-prev:before {
-    border-width: 15px 16px 15px 0;
-    border-color: transparent #C4C4C4 transparent transparent; }
-  .slick-prev:hover:before {
-    border-color: transparent #1B75BB transparent transparent; }
+    content: url("../../img/icon/arr-left-white.svg"); }
 
-.accent-bg .slick-next::before {
-  border-color: transparent transparent transparent white; }
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 1;
+  background-color: transparent; }
 
-.accent-bg .slick-prev::before {
-  border-color: transparent white transparent transparent; }
+.slick-prev.slick-disabled:before {
+  content: url("../../img/icon/arr-left-black.svg"); }
+
+.slick-next.slick-disabled:before {
+  content: url("../../img/icon/arr-right-black.svg"); }
 
 .slick-dots li button {
   width: 8px;
