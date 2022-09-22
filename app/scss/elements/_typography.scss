@@ -15,12 +15,7 @@
   margin-bottom: 24px;
 }
 
-h1.header-section {
-  font-size: 72px;
-  line-height: 1.1;
-  text-align: left;
-  font-weight: 800;
-}
+
 
 @media (max-width: 991px) {
   h1.header-section {
@@ -29,5 +24,31 @@ h1.header-section {
   }
   h2.header-section {
     font-size: 28px;
+  }
+}
+
+.wrapper-image {
+  position: relative;
+}
+
+.point-decorate {
+  &:before {
+    content: url("../img/points.png");
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.point-decorate.decorate-left {
+  &:before {
+    left: -140px;
+    bottom: -70px;
+  }
+}
+
+.point-decorate.decorate-right {
+  &:before {
+    right: -50px;
+    bottom: -70px;
   }
 }
