@@ -1022,106 +1022,107 @@
   .hide-xl {
     display: none !important; } }
 
-.masonry .m {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-height: 1200px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .masonry .m .ww {
-    padding: 7px; }
-  .masonry .m .w {
-    background-color: red; }
-    .masonry .m .w img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -o-object-fit: cover;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      max-height: 100%;
-      max-width: 100%; }
-  .masonry .m .ww:nth-child(1) {
-    height: 493px;
-    width: 33.33%; }
-    .masonry .m .ww:nth-child(1) .w {
+.masonry-section {
+  /* some styling not important */ }
+  .masonry-section .masonry {
+    --masonry-gap: 1rem;
+    --masonry-brick-width: 400px;
+    -webkit-column-gap: var(--masonry-gap);
+       -moz-column-gap: var(--masonry-gap);
+            column-gap: var(--masonry-gap);
+    -webkit-column-fill: initial;
+       -moz-column-fill: initial;
+            column-fill: initial;
+    -webkit-column-width: var(--masonry-brick-width);
+       -moz-column-width: var(--masonry-brick-width);
+            column-width: var(--masonry-brick-width); }
+    @media (max-width: 1350px) {
+      .masonry-section .masonry {
+        --masonry-brick-width: 350px; } }
+    @media (max-width: 1200px) {
+      .masonry-section .masonry {
+        --masonry-brick-width: 300px; } }
+    @media (max-width: 1050px) {
+      .masonry-section .masonry {
+        --masonry-brick-width: 250px; } }
+    @media (max-width: 900px) {
+      .masonry-section .masonry {
+        --masonry-brick-width: 200px; } }
+    @media (max-width: 550px) {
+      .masonry-section .masonry {
+        --masonry-brick-width: 150px; } }
+    @media (max-width: 400px) {
+      .masonry-section .masonry {
+        --masonry-brick-width: 120px; } }
+  .masonry-section .masonry > * {
+    -webkit-column-break-inside: avoid;
+       -moz-column-break-inside: avoid;
+            break-inside: avoid;
+    margin-bottom: var(--masonry-gap); }
+  @supports (grid-template-rows: masonry) {
+    .masonry-section .masonry {
+      display: grid;
+      gap: var(--masonry-gap);
+      grid-template-rows: masonry;
+      grid-template-columns: repeat(auto-fill, minmax(var(--masonry-brick-width), 1fr));
+      align-tracks: stretch; }
+    .masonry-section .masonry > * {
+      margin-bottom: initial; } }
+  .masonry-section .masonry {
+    padding: 1rem; }
+  .masonry-section .brick {
+    color: white; }
+    .masonry-section .brick a {
       display: block;
       position: relative;
-      padding-top: 100%;
       width: 100%;
       height: 0;
       overflow: hidden;
       -webkit-border-radius: 10px;
       border-radius: 10px; }
-  .masonry .m .ww:nth-child(2) {
-    height: 593px;
-    width: 33.33%; }
-    .masonry .m .ww:nth-child(2) .w {
-      display: block;
-      position: relative;
-      padding-top: 120%;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      -webkit-border-radius: 10px;
-      border-radius: 10px; }
-  .masonry .m .ww:nth-child(3) {
-    height: 593px;
-    width: 33.33%; }
-    .masonry .m .ww:nth-child(3) .w {
-      display: block;
-      position: relative;
-      padding-top: 119%;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      -webkit-border-radius: 10px;
-      border-radius: 10px; }
-  .masonry .m .ww:nth-child(4) {
-    height: 493px;
-    width: 33.33%; }
-    .masonry .m .ww:nth-child(4) .w {
-      display: block;
-      position: relative;
-      padding-top: 98%;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      -webkit-border-radius: 10px;
-      border-radius: 10px; }
-  .masonry .m .ww:nth-child(5) {
-    height: 493px;
-    width: 33.33%; }
-    .masonry .m .ww:nth-child(5) .w {
-      display: block;
-      position: relative;
-      padding-top: 98%;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      -webkit-border-radius: 10px;
-      border-radius: 10px; }
-  .masonry .m .ww:nth-child(6) {
-    height: 593px;
-    width: 33.33%; }
-    .masonry .m .ww:nth-child(6) .w {
-      display: block;
-      position: relative;
-      padding-top: 119%;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      -webkit-border-radius: 10px;
-      border-radius: 10px; }
+      @media (max-width: 670px) {
+        .masonry-section .brick a {
+          padding-top: 100% !important; } }
+      .masonry-section .brick a img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        max-height: 100%;
+        max-width: 100%; }
+      .masonry-section .brick a .title {
+        position: absolute;
+        left: 24px;
+        bottom: 24px;
+        color: white;
+        font-size: 24px;
+        text-transform: uppercase; }
+  .masonry-section .brick:nth-child(1) a {
+    padding-top: 100%; }
+  .masonry-section .brick:nth-child(2) a {
+    padding-top: 120%; }
+    .masonry-section .brick:nth-child(2) a .title {
+      left: 24px;
+      bottom: auto;
+      top: 24px; }
+  .masonry-section .brick:nth-child(3) a {
+    padding-top: 120%; }
+  .masonry-section .brick:nth-child(4) a {
+    padding-top: 100%; }
+  .masonry-section .brick:nth-child(5) a {
+    padding-top: 100%; }
+  .masonry-section .brick:nth-child(6) a {
+    padding-top: 120%; }
+    .masonry-section .brick:nth-child(6) a .title {
+      left: 24px;
+      bottom: auto;
+      top: 24px; }
 
 .acc {
   font-size: 18px; }
@@ -2346,7 +2347,9 @@ button, .btn {
   .bottom-section .hog-section {
     margin-bottom: 30px;
     padding-top: 30px;
-    background-color: gainsboro; }
+    background: url("../img/jpit-bg.jpg") 50% 50% no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
     .bottom-section .hog-section .hog-logo img {
       width: 200px; }
     .bottom-section .hog-section h3 {

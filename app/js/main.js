@@ -157,7 +157,45 @@ $('.home-slider-blog').slick({
 });
 
 
+////
 
+console.log($('#ff').width());
+
+console.log($('#ff').width()/1.36381948413528);
+
+// maintainSameHeight($('[data-same-height="blog-info"]'));
+
+
+
+$('#height').css("height", $('#ff').width()/1.36381948413528 )
+
+// function maintainSameHeight($list) {
+//     var height = 0;
+//
+//
+//     $list.each(function () {
+//         var $this = $(this);
+//         if ($this.outerHeight() > height) {
+//             height = $this.outerHeight();
+//         }
+//     });
+//
+//     $list.css("height", height);
+// }
+
+// function maintainSameHeight($list) {
+//     var height = 0;
+//
+//     $list.each(function () {
+//         var $this = $(this);
+//         if ($this.outerHeight() > height) {
+//             height = $this.outerHeight();
+//         }
+//     });
+//
+//     $list.css("height", height);
+// }
+////
 
 
 

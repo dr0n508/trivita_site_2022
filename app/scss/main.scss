@@ -6,7 +6,8 @@
 @import "vars";
 @import "fonts";
 @import "inputs";
-@import "elements/masonry";
+//@import "elements/masonry";
+@import "elements/masonry2";
 @import "elements/accordion";
 @import "elements/buttons";
 @import "elements/typography";
@@ -693,7 +694,8 @@ button, .btn {
   .hog-section {
     margin-bottom: 30px;
     padding-top: 30px;
-    background-color: gainsboro;
+    background: url("../img/jpit-bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
     .hog-logo {
       img {
         width: 200px;
