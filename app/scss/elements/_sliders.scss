@@ -1,12 +1,29 @@
 .slick-list {
-  margin: 0 60px;
   @media (max-width: 600px) {
     margin: 0 0;
     //padding:0 20% 0 0 !important;
   }
 }
 
-@media (max-width: 600px) {
+.top-product-section {
+  .slick-list {
+    margin: 0 100px;
+  }
+
+  .slick-next {
+    right: 40px;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  @media (max-width: 768px) {
+    //margin: 0 0;
+  }
+}
+
+@media (max-width: 768px) {
   .top-product-slider .slick-list {
     margin: 0 0;
     padding:0 20% 0 0 !important;

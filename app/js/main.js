@@ -92,7 +92,7 @@ $('.top-product-slider').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
                 arrows: false,
                 // centerMode: true,
@@ -115,8 +115,8 @@ $('.slider-stories').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: $('.pixoff-slider-navigation-anchor .slick-prev'),
-    nextArrow: $('.pixoff-slider-navigation-anchor .slick-next')
+    prevArrow: $('.slider-stories-navigation .slick-prev'),
+    nextArrow: $('.slider-stories-navigation .slick-next')
 
 
 

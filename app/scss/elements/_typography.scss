@@ -29,6 +29,10 @@
 
 .wrapper-image {
   position: relative;
+  display: flex;
+  img {
+    margin: 0 auto;
+  }
 }
 
 .point-decorate {
