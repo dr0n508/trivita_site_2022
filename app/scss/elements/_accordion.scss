@@ -1,7 +1,7 @@
 .acc {
   font-size: 18px;
 
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     font-size: 16px;
     .acc-card {
       border-bottom: solid 1px rgba(255,255,255,0.1);
@@ -15,7 +15,7 @@
     font-size: 22px;
     font-weight: 500;
     cursor: pointer;
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       font-size: 18px;
       &::after {
         content: "";
@@ -45,7 +45,7 @@
     }
 
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     .acc-panel {
       display: none;
     }

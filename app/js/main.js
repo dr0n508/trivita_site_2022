@@ -38,7 +38,7 @@
 
 $('.acc-title').click(function(e) {
 
-    if ($(window).width() <= 991) {
+    if ($(window).width() <= 1200) {
 
         var dropDown = $(this).closest('.acc-card').find('.acc-panel');
         $(this).closest('.acc').find('.acc-panel').not(dropDown).slideUp();
@@ -83,6 +83,14 @@ $('.top-product-slider').slick({
     arrows: true,
 
     responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: false,
+            }
+        },
         {
             breakpoint: 1024,
             settings: {

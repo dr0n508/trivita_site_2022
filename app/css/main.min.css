@@ -1146,7 +1146,7 @@
 
 .acc {
   font-size: 18px; }
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     .acc {
       font-size: 16px; }
       .acc .acc-card {
@@ -1159,7 +1159,7 @@
     font-size: 22px;
     font-weight: 500;
     cursor: pointer; }
-    @media (max-width: 992px) {
+    @media (max-width: 1200px) {
       .acc .acc-title {
         font-size: 18px; }
         .acc .acc-title::after {
@@ -1184,7 +1184,7 @@
       font-weight: 500;
       line-height: 40px;
       color: rgba(255, 255, 255, 0.7); }
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     .acc .acc-panel {
       display: none; } }
 
@@ -1763,6 +1763,37 @@
       font-weight: 500;
       color: rgba(255, 255, 255, 0.4); }
 
+@media (max-width: 1200px) {
+  .footer .footer-top {
+    padding-top: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .footer .footer-top .col1, .footer .footer-top .col6 {
+      width: 100%; }
+    .footer .footer-top .col2, .footer .footer-top .col3, .footer .footer-top .col4, .footer .footer-top .col5 {
+      width: 51%;
+      margin: 0 auto; }
+    .footer .footer-top .call-phone span {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: 30px; }
+    .footer .footer-top .footer-logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .footer .footer-top .logo-wrapper {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .footer .bottom-footer {
+    padding: 30px 0; }
+    .footer .bottom-footer .copyright-text {
+      font-size: 14px; } }
+
 @media (max-width: 991px) {
   .footer .footer-top {
     padding-top: 30px;
@@ -1930,6 +1961,9 @@ button, .btn {
 .show-mobile {
   display: none; }
 
+.show-medium {
+  display: none; }
+
 .call-phone span {
   font-weight: 500;
   display: -webkit-box;
@@ -1937,6 +1971,12 @@ button, .btn {
   display: flex; }
   .call-phone span img {
     margin-right: 10px; }
+
+@media (max-width: 1200px) {
+  .hidden-medium {
+    display: none; }
+  .show-medium {
+    display: block; } }
 
 @media (max-width: 992px) {
   .hidden-mobile {

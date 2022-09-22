@@ -58,6 +58,39 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .footer {
+    .footer-top {
+      padding-top: 30px;
+      flex-wrap: wrap;
+      .col1, .col6 {
+        width: 100%;
+      }
+      .col2, .col3, .col4, .col5 {
+        width: 51%;
+        margin: 0 auto;
+      }
+      .call-phone span {
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      .footer-logo {
+        display: flex;
+        justify-content: center;
+      }
+      .logo-wrapper {
+        justify-content: center;
+      }
+    }
+    .bottom-footer {
+      padding: 30px 0;
+      .copyright-text {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .footer {
     .footer-top {

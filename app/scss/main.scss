@@ -160,6 +160,10 @@ button, .btn {
   display: none;
 }
 
+.show-medium {
+  display: none;
+}
+
 .call-phone {
   span {
     font-weight: 500;
@@ -167,6 +171,15 @@ button, .btn {
     img {
       margin-right: 10px;
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .hidden-medium {
+    display: none;
+  }
+  .show-medium {
+    display: block;
   }
 }
 
