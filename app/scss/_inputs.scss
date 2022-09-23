@@ -1,0 +1,116 @@
+//////////////////////quantity-input
+.quantity-input {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  border: solid 2px $text-gray;
+  //width: max-content;
+  padding: 2px;
+  border-radius: 50px;
+
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  .quantity-arrow-minus,
+  .quantity-arrow-plus {
+    cursor: pointer;
+    background: none;
+    //background: #F6F6F6;
+    border: none;
+    outline: none;
+    color: $text-gray;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 57px;
+    height: 100%;
+    padding: 3px 20px 7px;
+    font-family: $default;
+
+    border-radius: 50%;
+
+    //display: table-cell;
+    //vertical-align: middle;
+
+    @extend .animate;
+    &:hover {
+      background: #dedede;
+    }
+  }
+  .quantity-num {
+    padding: 0 5px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    //height: 40px;
+    width: 65px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-family: $default;
+    //background: #F6F6F6;
+  }
+}
+
+
+//custom radio button
+
+.custom-radio {
+  .wrapper{
+    display: inline-flex;
+    //background: #fff;
+    //align-items: center;
+    //justify-content: space-evenly;
+    //border-radius: 5px;
+    //padding: 20px 15px;
+    //box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+  }
+  .wrapper .option{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    margin-right: 20px;
+
+    padding-right: 48px;
+    padding-left: 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid $text-gray;
+    transition: all 0.3s ease;
+  }
+
+  input[type="radio"]{
+    display: none;
+  }
+  #option-1:checked:checked ~ .option-1,
+  #option-2:checked:checked ~ .option-2{
+    border-color: #44578F;
+    background: #44578F;
+  }
+  #option-1:checked:checked ~ .option-1 .dot,
+  #option-2:checked:checked ~ .option-2 .dot{
+    background: #fff;
+  }
+  #option-1:checked:checked ~ .option-1 .dot::before,
+  #option-2:checked:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+  }
+  .wrapper .option span{
+    font-size: 20px;
+    color: $text-gray;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span{
+    color: #fff;
+  }
+}
+

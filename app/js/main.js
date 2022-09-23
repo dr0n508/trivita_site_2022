@@ -164,47 +164,82 @@ $('.home-slider-blog').slick({
 
 });
 
+//custom quantity input
 
-////
+(function quantityProducts() {
+    var $quantityArrowMinus = $(".quantity-arrow-minus");
+    var $quantityArrowPlus = $(".quantity-arrow-plus");
+    var $quantityNum = $(".quantity-num");
 
-// console.log($('#ff').width());
+    $quantityArrowMinus.click(quantityMinus);
+    $quantityArrowPlus.click(quantityPlus);
 
-// console.log($('#ff').width()/1.36381948413528);
+    function quantityMinus() {
+        event.preventDefault();
+        if ($quantityNum.val() > 1) {
+            $quantityNum.val(+$quantityNum.val() - 1);
+        }
+    }
 
-// maintainSameHeight($('[data-same-height="blog-info"]'));
+    function quantityPlus() {
+        event.preventDefault();
+        $quantityNum.val(+$quantityNum.val() + 1);
+    }
+})();
+
+
+//select
 
 
 
-// $('#height').css("height", $('#ff').width()/1.36381948413528 )
+$(".dropdown dt a").on('click', function() {
+    if ($(window).width() <= 991) {
+        $(".dropdown dd ul").slideToggle('fast');
+    }
 
-// function maintainSameHeight($list) {
-//     var height = 0;
-//
-//
-//     $list.each(function () {
-//         var $this = $(this);
-//         if ($this.outerHeight() > height) {
-//             height = $this.outerHeight();
-//         }
-//     });
-//
-//     $list.css("height", height);
-// }
+});
 
-// function maintainSameHeight($list) {
-//     var height = 0;
-//
-//     $list.each(function () {
-//         var $this = $(this);
-//         if ($this.outerHeight() > height) {
-//             height = $this.outerHeight();
-//         }
-//     });
-//
-//     $list.css("height", height);
-// }
-////
+$(".dropdown dd ul li a").on('click', function() {
+    if ($(window).width() <= 991) {
+        $(".dropdown dd ul").hide();
+    }
+});
 
+function getSelectedValue(id) {
+    return $("#" + id).find("dt a span.value").html();
+}
+
+$(document).bind('click', function(e) {
+    var $clicked = $(e.target);
+
+
+    if ($(window).width() <= 991) {
+        if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+    }
+
+
+
+
+});
+
+$('.mutliSelect input[type="checkbox"]').on('click', function() {
+
+    var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
+        title = $(this).val() + ",";
+
+    if ($(this).is(':checked')) {
+        var html = '<span title="' + title + '">' + title + '</span>';
+        $('.multiSel').append(html);
+        $(".hida").hide();
+    } else {
+        $('span[title="' + title + '"]').remove();
+        var ret = $(".hida");
+        $('.dropdown dt a').append(ret);
+
+    }
+});
+
+///end select
 
 
 
