@@ -64,16 +64,8 @@
 //custom radio button
 
 .custom-radio {
-  .wrapper{
-    display: inline-flex;
-    //background: #fff;
-    //align-items: center;
-    //justify-content: space-evenly;
-    //border-radius: 5px;
-    //padding: 20px 15px;
-    //box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
-  }
-  .wrapper .option{
+  display: inline-flex;
+  .option{
     display: flex;
     align-items: center;
     height: 65px;
@@ -85,8 +77,11 @@
     cursor: pointer;
     border: 2px solid $text-gray;
     transition: all 0.3s ease;
+    span{
+      font-size: 20px;
+      color: $text-gray;
+    }
   }
-
   input[type="radio"]{
     display: none;
   }
@@ -103,10 +98,6 @@
   #option-2:checked:checked ~ .option-2 .dot::before{
     opacity: 1;
     transform: scale(1);
-  }
-  .wrapper .option span{
-    font-size: 20px;
-    color: $text-gray;
   }
   #option-1:checked:checked ~ .option-1 span,
   #option-2:checked:checked ~ .option-2 span{

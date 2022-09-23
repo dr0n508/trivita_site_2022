@@ -131,6 +131,13 @@
 
   .wrapper-info {
 
+    .label {
+      margin-bottom: 16px;
+      color: $text;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
     .review-block {
       display: flex;
       .qt-review {
@@ -160,7 +167,13 @@
     }
 
     .options-block {
-
+      margin-bottom: 30px;
+      .custom-radio {
+        .label {
+          color: $text-gray;
+          font-size: 18px;
+        }
+      }
     }
 
     .footer-product {
