@@ -3,7 +3,7 @@
   .acc-title {
     position: relative;
     display: block;
-    padding: 16px 0px;
+    padding: 16px 0;
     text-align: left;
     font-size: 22px;
     font-weight: 500;
@@ -43,11 +43,10 @@
     .acc-title {
       font-size: 18px;
       &::after {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 10px;
-        background: url("../../img/icon/arrow-down-white.svg") 50% 50% no-repeat;
+        content: "\e90c";
+        font-family: icomoon;
+        font-size: 10px;
+        color: #fff;
       }
       &.active::after {
         transform: rotate(180deg);
@@ -69,8 +68,6 @@
     }
     &.active::after {
       content: "\e911";
-      font-family: icomoon;
-      color: $accent-btn;
     }
   }
   .acc-panel {

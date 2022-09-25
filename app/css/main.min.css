@@ -1279,7 +1279,7 @@
   .acc .acc-title {
     position: relative;
     display: block;
-    padding: 16px 0px;
+    padding: 16px 0;
     text-align: left;
     font-size: 22px;
     font-weight: 500;
@@ -1312,11 +1312,10 @@
     .acc.footer-menu-accordion .acc-title {
       font-size: 18px; }
       .acc.footer-menu-accordion .acc-title::after {
-        content: "";
-        display: block;
-        width: 16px;
-        height: 10px;
-        background: url("../../img/icon/arrow-down-white.svg") 50% 50% no-repeat; }
+        content: "\e90c";
+        font-family: icomoon;
+        font-size: 10px;
+        color: #fff; }
       .acc.footer-menu-accordion .acc-title.active::after {
         -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
@@ -1332,9 +1331,7 @@
     font-family: icomoon;
     color: #44578F; }
   .acc.faq-accordion .acc-title.active::after {
-    content: "\e911";
-    font-family: icomoon;
-    color: #44578F; }
+    content: "\e911"; }
 
 .acc.faq-accordion .acc-panel {
   font-size: 18px;
