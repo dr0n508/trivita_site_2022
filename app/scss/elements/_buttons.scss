@@ -54,6 +54,10 @@
   font-size: 20px;
   font-weight: 700;
   color: #737989;
+  @media (max-width: 991px) {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
 }
 
 .btn-tab.active {

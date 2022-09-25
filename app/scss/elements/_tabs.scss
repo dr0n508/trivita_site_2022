@@ -1,7 +1,16 @@
 .tabs {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 45px;
+
+  @media (max-width: 992px) {
+
+    margin-bottom: 20px;
+
+  }
 }
+
+
 
 .tc_content {
   display: none;
