@@ -36,9 +36,11 @@
 
 //accordion
 
-$('.acc-title').click(function() {
+$('.acc-title').click(function(e) {
 
-    if ($(window).width() <= 1200) {
+    console.log($(this).hasClass('acc-faq'));
+
+    if ($(this).hasClass('acc-faq') || $(window).width() <= 1200) {
 
         var dropDown = $(this).closest('.acc-card').find('.acc-panel');
         $(this).closest('.acc').find('.acc-panel').not(dropDown).slideUp();
@@ -51,7 +53,7 @@ $('.acc-title').click(function() {
         }
 
         dropDown.stop(false, true).slideToggle();
-
+        e.preventDefault();
 
     }
 
