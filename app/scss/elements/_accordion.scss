@@ -61,9 +61,12 @@
   }
   .acc-title {
     font-size: 24px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 40px;
     &:after {
       content: "\e912";
-      top: 1.5rem;
+      top: 2.1rem;
       font-family: icomoon;
       color: $accent-btn;
     }

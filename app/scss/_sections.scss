@@ -310,7 +310,7 @@
     text-align: right;
     img {
       max-width: 80%;
-      border-radius: 8px;
+      border-radius: $border-radius;
     }
   }
   .slider-stories-navigation {
@@ -331,7 +331,7 @@
   .blockquote-stories {
     padding: 60px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: $border-radius;
     position: relative;
     &:before,
     &:after {
@@ -514,7 +514,7 @@
     @media (max-width: 992px) {
       .wraper-section {
         padding-top: 40px;
-        border-radius: 8px;
+        border-radius: $border-radius;
 
         .logo-jpit {
           .line-left,.line-right {
