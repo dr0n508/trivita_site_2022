@@ -46,6 +46,22 @@
   }
 }
 
+.btn-tab {
+  padding: 16px 32px;
+  cursor: pointer;
+  background-color: #F0F0F0;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #737989;
+}
+
+.btn-tab.active {
+  color: white;
+  background-color: $accent-btn;
+
+}
+
 @media (max-width: 991px) {
   .btn-accent {
     font-size: 14px;

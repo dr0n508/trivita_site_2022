@@ -87,8 +87,8 @@
   }
   #option-1:checked:checked ~ .option-1,
   #option-2:checked:checked ~ .option-2{
-    border-color: #44578F;
-    background: #44578F;
+    border-color: $accent-btn;
+    background: $accent-btn;
   }
   #option-1:checked:checked ~ .option-1 .dot,
   #option-2:checked:checked ~ .option-2 .dot{

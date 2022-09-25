@@ -1,0 +1,14 @@
+.tabs {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.tc_content {
+  display: none;
+}
+.tc_content.active {
+  display: block;
+}
+
+
+

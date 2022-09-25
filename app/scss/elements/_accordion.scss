@@ -15,23 +15,14 @@
     font-size: 22px;
     font-weight: 500;
     cursor: pointer;
-    @media (max-width: 1200px) {
-      font-size: 18px;
-      &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 16px;
-        height: 10px;
-        top: 50%;
-        right: 10px;
-        background: url("../../img/icon/arrow-down-white.svg") 50% 50% no-repeat;
-      }
-      &.active::after {
-        transform: rotate(180deg);
-      }
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 10px;
     }
+
   }
+
   .acc-panel {
     margin: 0;
     //padding: 0 10px 10px 10px;
@@ -49,6 +40,52 @@
     .acc-panel {
       display: none;
     }
+  }
+}
+
+.acc.footer-menu-accordion {
+  .acc-title {
+    @media (max-width: 1200px) {
+      font-size: 18px;
+      &::after {
+        content: "";
+
+
+        display: block;
+        width: 16px;
+        height: 10px;
+
+        background: url("../../img/icon/arrow-down-white.svg") 50% 50% no-repeat;
+      }
+      &.active::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.acc.faq-accordion {
+  .acc-card {
+    border-bottom: 1px solid #CDCDCD;
+  }
+  .acc-title {
+    font-size: 24px;
+    &:after {
+      content: "\e912";
+      font-family: icomoon;
+      color: $accent-btn;
+    }
+    &.active::after {
+      content: "\e911";
+      font-family: icomoon;
+      color: $accent-btn;
+    }
+
+  }
+  .acc-panel {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 25px;
   }
 }
 

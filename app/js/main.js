@@ -36,7 +36,7 @@
 
 //accordion
 
-$('.acc-title').click(function(e) {
+$('.acc-title').click(function() {
 
     if ($(window).width() <= 1200) {
 
@@ -51,7 +51,7 @@ $('.acc-title').click(function(e) {
         }
 
         dropDown.stop(false, true).slideToggle();
-        e.preventDefault();
+
 
     }
 
@@ -293,10 +293,10 @@ $(document).on('click', function(e) {
 
 // Tabs TC
 $('.tab').on('click', function(){
-	$('.tab').removeClass('active');
-	$(this).addClass('active');
-	$('.tc_content').css('display', 'none');
-	$('.tc_content[data-index="'+$(this).data('index')+'"]').fadeIn(300);
+    $('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('.tc_content').css('display', 'none');
+    $('.tc_content[data-index="'+$(this).data('index')+'"]').fadeIn(300);
 
 });
 

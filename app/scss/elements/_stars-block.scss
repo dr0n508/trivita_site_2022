@@ -1,0 +1,55 @@
+//star-block
+
+.stars-block {
+  .icon-Union {
+    &:before {
+      color: $text-gray;
+    }
+  }
+}
+
+.stars-block.star1 {
+  .icon-Union:nth-child(1) {
+    &:before {
+      color: #ffcf42;
+    }
+  }
+}
+
+.stars-block.star2 {
+  .icon-Union:nth-child(1),
+  .icon-Union:nth-child(2) {
+    &:before {
+      color: #ffcf42;
+    }
+  }
+}
+
+.stars-block.star3 {
+  .icon-Union:nth-child(1),
+  .icon-Union:nth-child(2),
+  .icon-Union:nth-child(3){
+    &:before {
+      color: #ffcf42;
+    }
+  }
+}
+
+.stars-block.star4 {
+  .icon-Union:nth-child(1),
+  .icon-Union:nth-child(2),
+  .icon-Union:nth-child(3),
+  .icon-Union:nth-child(4) {
+    &:before {
+      color: #ffcf42;
+    }
+  }
+}
+
+.stars-block.star5 {
+  .icon-Union {
+    &:before {
+      color: #ffcf42;
+    }
+  }
+}

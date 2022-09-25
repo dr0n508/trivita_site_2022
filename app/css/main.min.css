@@ -1238,6 +1238,42 @@
       bottom: auto;
       top: 24px; }
 
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 45px; }
+
+.tc_content {
+  display: none; }
+
+.tc_content.active {
+  display: block; }
+
+.stars-block .icon-Union:before {
+  color: #5F667A; }
+
+.stars-block.star1 .icon-Union:nth-child(1):before {
+  color: #ffcf42; }
+
+.stars-block.star2 .icon-Union:nth-child(1):before,
+.stars-block.star2 .icon-Union:nth-child(2):before {
+  color: #ffcf42; }
+
+.stars-block.star3 .icon-Union:nth-child(1):before,
+.stars-block.star3 .icon-Union:nth-child(2):before,
+.stars-block.star3 .icon-Union:nth-child(3):before {
+  color: #ffcf42; }
+
+.stars-block.star4 .icon-Union:nth-child(1):before,
+.stars-block.star4 .icon-Union:nth-child(2):before,
+.stars-block.star4 .icon-Union:nth-child(3):before,
+.stars-block.star4 .icon-Union:nth-child(4):before {
+  color: #ffcf42; }
+
+.stars-block.star5 .icon-Union:before {
+  color: #ffcf42; }
+
 .acc {
   font-size: 18px; }
   @media (max-width: 1200px) {
@@ -1253,22 +1289,10 @@
     font-size: 22px;
     font-weight: 500;
     cursor: pointer; }
-    @media (max-width: 1200px) {
-      .acc .acc-title {
-        font-size: 18px; }
-        .acc .acc-title::after {
-          content: "";
-          position: absolute;
-          display: block;
-          width: 16px;
-          height: 10px;
-          top: 50%;
-          right: 10px;
-          background: url("../../img/icon/arrow-down-white.svg") 50% 50% no-repeat; }
-        .acc .acc-title.active::after {
-          -webkit-transform: rotate(180deg);
-              -ms-transform: rotate(180deg);
-                  transform: rotate(180deg); } }
+    .acc .acc-title::after {
+      position: absolute;
+      top: 50%;
+      right: 10px; }
   .acc .acc-panel {
     margin: 0;
     text-align: left; }
@@ -1281,6 +1305,39 @@
   @media (max-width: 1200px) {
     .acc .acc-panel {
       display: none; } }
+
+@media (max-width: 1200px) {
+  .acc.footer-menu-accordion .acc-title {
+    font-size: 18px; }
+    .acc.footer-menu-accordion .acc-title::after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 10px;
+      background: url("../../img/icon/arrow-down-white.svg") 50% 50% no-repeat; }
+    .acc.footer-menu-accordion .acc-title.active::after {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); } }
+
+.acc.faq-accordion .acc-card {
+  border-bottom: 1px solid #CDCDCD; }
+
+.acc.faq-accordion .acc-title {
+  font-size: 24px; }
+  .acc.faq-accordion .acc-title:after {
+    content: "\e912";
+    font-family: icomoon;
+    color: #44578F; }
+  .acc.faq-accordion .acc-title.active::after {
+    content: "\e911";
+    font-family: icomoon;
+    color: #44578F; }
+
+.acc.faq-accordion .acc-panel {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 25px; }
 
 .btn-accent {
   padding: 18px 60px;
@@ -1327,6 +1384,20 @@
   font-size: 16px; }
   .wide-btn:hover {
     background-color: #438D13; }
+
+.btn-tab {
+  padding: 16px 32px;
+  cursor: pointer;
+  background-color: #F0F0F0;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #737989; }
+
+.btn-tab.active {
+  color: white;
+  background-color: #44578F; }
 
 @media (max-width: 991px) {
   .btn-accent {
@@ -2118,6 +2189,9 @@ a {
 .pagination-block {
   border-top: solid 1px #CDCDCD; }
 
+.single-product .row {
+  border-bottom: solid 1px #CDCDCD; }
+
 .single-product .wrapper-info .label {
   margin-bottom: 16px;
   color: #171B27;
@@ -2170,29 +2244,8 @@ a {
     .single-product .wrapper-info .footer-product .wrap .btn-gradient .icon-buy-cart:before {
       color: white; }
 
-.stars-block .icon-Union:before {
-  color: #5F667A; }
-
-.stars-block.star1 .icon-Union:nth-child(1):before {
-  color: #ffcf42; }
-
-.stars-block.star2 .icon-Union:nth-child(1):before,
-.stars-block.star2 .icon-Union:nth-child(2):before {
-  color: #ffcf42; }
-
-.stars-block.star3 .icon-Union:nth-child(1):before,
-.stars-block.star3 .icon-Union:nth-child(2):before,
-.stars-block.star3 .icon-Union:nth-child(3):before {
-  color: #ffcf42; }
-
-.stars-block.star4 .icon-Union:nth-child(1):before,
-.stars-block.star4 .icon-Union:nth-child(2):before,
-.stars-block.star4 .icon-Union:nth-child(3):before,
-.stars-block.star4 .icon-Union:nth-child(4):before {
-  color: #ffcf42; }
-
-.stars-block.star5 .icon-Union:before {
-  color: #ffcf42; }
+.tabs-section {
+  padding: 60px 0; }
 
 ::-webkit-input-placeholder {
   color: #465377; }
