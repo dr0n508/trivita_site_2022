@@ -1,12 +1,13 @@
 .btn-accent {
-  padding: 18px 60px;
+  padding: 18px 40px;
   display: inline-block;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
+  line-height: 1.2;
   letter-spacing: 0.04em;
   border-radius: $border-radius;
-  min-width: 230px;
+  //min-width: 230px;
   text-transform: uppercase;
 }
 
@@ -66,10 +67,10 @@
 
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1440px) {
   .btn-accent {
-    font-size: 14px;
-    padding: 16px 32px;
+    font-size: 16px;
+    padding: 16px 10px;
   }
 }
 

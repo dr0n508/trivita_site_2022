@@ -1,4 +1,5 @@
 .product-cart.w-hover {
+  cursor: pointer;
   .wrapper {
     padding: 10px;
   }
@@ -28,10 +29,7 @@
 
 .product-cart {
   position: relative;
-  border-radius: 12px;
-  cursor: pointer;
   margin-bottom: 20px;
-
   .image-block {
     display: block;
     position: relative;
@@ -39,7 +37,7 @@
     width: 100%;
     height: 0;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: $border-radius;
     img {
       position: absolute;
       top: 50%;
@@ -65,17 +63,20 @@
     margin-bottom: 12px;
   }
   .price {
-    font-size: 16px;
+    font-size: 20px;
     color: $accent-text;
   }
   .price-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .price {
+      font-size: 20px;
+    }
     .btn-accent.btn-transparent {
-      font-size: 18px;
-      padding-left: 20px;
-      padding-right: 20px;
+      //font-size: 18px;
+      //padding-left: 20px;
+      //padding-right: 20px;
     }
   }
   .button-product-cart {
@@ -117,9 +118,7 @@
   }
 }
 
-.pagination-block {
-  border-top: solid 1px #CDCDCD;
-}
+
 
 
 .single-product {

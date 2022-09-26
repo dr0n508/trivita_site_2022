@@ -1,5 +1,5 @@
 .dropdown-select {
-  margin: 0 0.5rem;
+  //margin: 0 0.5rem;
   span.value {
     display: none;
   }
@@ -45,6 +45,7 @@
         input {
           margin-top: 4px;
           margin-right: 10px;
+          accent-color: $accent-text;
         }
       }
     }
