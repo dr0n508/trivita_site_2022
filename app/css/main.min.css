@@ -1597,30 +1597,8 @@
   -webkit-border-radius: 8px;
           border-radius: 8px; }
 
-a {
-  color: #fff; }
-
-.dropdown-select .wrapper-select-dropdown,
-.dropdown-select .wrapper-checkbox-select {
-  margin: 0px;
-  padding: 0px; }
-
-.dropdown-select ul {
-  margin: -1px 0 0 0; }
-
-.dropdown-select .wrapper-checkbox-select {
-  position: relative; }
-
-.dropdown-select a,
-.dropdown-select a:visited {
-  color: #fff;
-  text-decoration: none;
-  outline: none;
-  font-size: 12px; }
-
-@media (min-width: 992px) {
-  .dropdown-select .wrapper-select-dropdown {
-    display: none; } }
+.dropdown-select span.value {
+  display: none; }
 
 .dropdown-select .wrapper-select-dropdown a {
   background-color: #4F6877;
@@ -1632,41 +1610,29 @@ a {
   border: 0;
   width: 272px; }
 
-.dropdown-select .wrapper-select-dropdown a span,
-.multiSel span {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 3px 2px 0; }
+.dropdown-select .wrapper-checkbox-select {
+  position: relative; }
+  .dropdown-select .wrapper-checkbox-select ul {
+    padding: 2px 15px 2px 5px;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    overflow: auto;
+    z-index: 3; }
+    @media (max-width: 992px) {
+      .dropdown-select .wrapper-checkbox-select ul {
+        display: none;
+        left: 0px;
+        top: 2px;
+        width: 280px; } }
+    @media (min-width: 992px) {
+      .dropdown-select .wrapper-checkbox-select ul {
+        display: block !important;
+        position: relative; } }
 
-.dropdown-select .wrapper-checkbox-select ul {
-  border: 0;
-  color: #171B27;
-  padding: 2px 15px 2px 5px;
-  position: absolute;
-  background-color: white;
-  list-style: none;
-  overflow: auto;
-  z-index: 3; }
-  @media (max-width: 992px) {
-    .dropdown-select .wrapper-checkbox-select ul {
-      display: none;
-      left: 0px;
-      top: 2px;
-      width: 280px; } }
-  @media (min-width: 992px) {
-    .dropdown-select .wrapper-checkbox-select ul {
-      display: block !important;
-      position: relative; } }
-
-.dropdown-select span.value {
-  display: none; }
-
-.dropdown-select .wrapper-checkbox-select ul li a {
-  padding: 5px;
-  display: block; }
-
-.dropdown-select .wrapper-checkbox-select ul li a:hover {
-  background-color: #fff; }
+@media (min-width: 992px) {
+  .dropdown-select .wrapper-select-dropdown {
+    display: none; } }
 
 .pagination-block {
   display: -webkit-box;
