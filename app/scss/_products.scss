@@ -244,24 +244,75 @@
       }
     }
   }
+  @media (max-width: 600px) {
+    .title-block {
+      .title-product, .price-product {
+        font-size: 24px;
+      }
+    }
+  }
 }
 
 //tabs-section
 
 .tabs-section {
   padding: 60px 0;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: $text-gray;
+  }
   .tab-swipe-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
-    .text-label {
-      font-size: 16px;
+    display: none;
+  }
+  .acc-panel {
+    color: $text-gray;
+  }
+
+  ul {
+    margin-bottom: 20px;
+    list-style-position: inside;
+    list-style-type: '- ';
+    li {
+      font-size: 18px;
+      font-weight: 400;
       color: $text-gray;
-      padding: 0 40px;
     }
   }
 
+  .list-references {
+    list-style-type: decimal;
+    li {
+      color: $text;
+    }
+    a {
+      color: $accent;
+    }
+  }
+
+  strong {
+    color: $accent;
+  }
+
+  .supplements-logos {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 30px 0;
+    li {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
   @media (max-width: 992px) {
     .wraper-tabs {
       overflow-x: scroll;
@@ -270,6 +321,19 @@
           flex-shrink: 0;
           margin: 0 5px;
         }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .tab-swipe-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+      .text-label {
+        font-size: 16px;
+        color: $text-gray;
+        padding: 0 40px;
       }
     }
   }
@@ -286,11 +350,32 @@
       margin-bottom: 16px;
       font-size: 24px;
       font-weight: 700;
+      color: $text;
     }
     .text-review {
       font-size: 20px;
       font-weight: 400;
       color: $text-gray;
+      margin-bottom: 0;
     }
+  }
+  @media (max-width: 992px) {
+    .review {
+      padding: 24px 20px;
+      .name-author {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      .text-review {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.recommendation-section {
+  padding-bottom: 60px;
+  @media (max-width: 992px) {
+    padding-bottom: 30px;
   }
 }
