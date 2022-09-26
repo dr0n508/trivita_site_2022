@@ -194,21 +194,21 @@ $('.home-slider-blog').slick({
 
 
 
-$(".dropdown dt a").on('click', function() {
+$(".dropdown-select .wrapper-select-dropdown a").on('click', function() {
     if ($(window).width() <= 991) {
-        $(".dropdown dd ul").slideToggle('fast');
+        $(".dropdown-select .wrapper-checkbox-select ul").slideToggle('fast');
     }
 
 });
 
-$(".dropdown dd ul li a").on('click', function() {
+$(".dropdown-select .wrapper-select-dropdown ul li a").on('click', function() {
     if ($(window).width() <= 991) {
-        $(".dropdown dd ul").hide();
+        $(".dropdown-select .wrapper-checkbox-select ul").hide();
     }
 });
 
 function getSelectedValue(id) {
-    return $("#" + id).find("dt a span.value").html();
+    return $("#" + id).find(".wrapper-select-dropdown a span.value").html();
 }
 
 $(document).bind('click', function(e) {
@@ -216,7 +216,7 @@ $(document).bind('click', function(e) {
 
 
     if ($(window).width() <= 991) {
-        if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+        if (!$clicked.parents().hasClass("dropdown-select")) $(".dropdown-select .wrapper-checkbox-select ul").hide();
     }
 
 
@@ -236,7 +236,7 @@ $('.mutliSelect input[type="checkbox"]').on('click', function() {
     } else {
         $('span[title="' + title + '"]').remove();
         var ret = $(".hida");
-        $('.dropdown dt a').append(ret);
+        $('.dropdown-select .wrapper-select-dropdown a').append(ret);
 
     }
 });
