@@ -1,5 +1,4 @@
 .dropdown-select {
-  //margin: 0 0.5rem;
   span.value {
     display: none;
   }
@@ -21,7 +20,7 @@
       top: 50%;
       transform: translateY(-50%);
       font-size: 10px;
-      font-family: icomoon;
+      font-family: icomoon !important;
     }
   }
   .wrapper-checkbox-select {

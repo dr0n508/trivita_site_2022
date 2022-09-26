@@ -55,7 +55,6 @@
   }
 }
 
-
 ////promo-section////
 .promo-section {
   padding: 12px 0;
@@ -86,9 +85,8 @@
   }
 }
 
-////promo-section////
+////offer-section////
 .offer-section {
-
   color: $text-gray;
   font-weight: 500;
   h1.header-section {
@@ -159,15 +157,6 @@
   }
 }
 
-////top-product-section///
-.top-product-section {
-
-
-
-}
-
-
-
 ////video-section///
 .video-section {
   p {
@@ -185,6 +174,9 @@
 ////podcast-section///
 .podcast-section {
   color: $text-gray;
+  .btn-transparent {
+    min-width: 230px;
+  }
   .col2 {
     text-align: right;
     @media (max-width: 992px) {
@@ -220,11 +212,6 @@
   }
 }
 
-////masonry-section///
-.masonry-section {
-
-}
-
 ////p-membership-section///
 .p-membership-section {
   .col1 {
@@ -255,10 +242,6 @@
     }
 
   }
-  .col2 {
-    //position: relative;
-
-  }
   .pm-list {
     margin-top: 30px;
     padding-left: 20px;
@@ -271,6 +254,7 @@
 
   }
   @media (max-width: 992px) {
+    padding: 20px 0 40px;
     .col1 {
       .wrap {
         justify-content: center;
@@ -387,19 +371,16 @@
 
 ///home-blog-section///
 .home-blog-section {
-
   h3 {
     font-size: 32px;
     margin-top: 24px;
     margin-bottom: 24px;
     font-weight: 800;
   }
-
   .wrapper-articles {
     position: relative;
     padding-bottom: 50px;
   }
-
   .home-slider-blog-navigation {
     position: absolute;
     width: 150px;
@@ -409,7 +390,6 @@
       display: none;
     }
   }
-
   p {
     font-size: 20px;
     line-height: 2;
@@ -419,6 +399,9 @@
     margin-top: 60px;
   }
   @media (max-width: 991px) {
+    .slick-dots {
+      bottom: -50px;
+    }
     h3 {
       font-size: 20px;
     }
@@ -468,7 +451,6 @@
 
   .just-pray-it-section {
     margin-top: 40px;
-    //padding-bottom: 80px;
     .wraper-section {
       background: url("../img/jpit-bg.jpg") 50% 50% no-repeat;
       background-size: cover;
@@ -482,7 +464,7 @@
         align-items: center;
         justify-content: center;
         margin: 0 50px 50px 50px;
-        .line-left,.line-right {
+        .line-left, .line-right {
           width: 1px;
           height: 1px;
           display: inline-block;
@@ -497,27 +479,22 @@
           margin: 0 60px;
         }
       }
-
       h3 {
         font-size: 40px;
       }
-
       p {
         font-size: 26px;
       }
-
       .wide-btn {
         margin-top: 80px;
       }
-
     }
     @media (max-width: 992px) {
       .wraper-section {
         padding-top: 40px;
         border-radius: $border-radius;
-
         .logo-jpit {
-          .line-left,.line-right {
+          .line-left, .line-right {
             display: none;
           }
           img {

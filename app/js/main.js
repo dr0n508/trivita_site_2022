@@ -32,6 +32,17 @@
 	});
 
 
+//search mobile
+$('.submit-search').on('click', function(){
+    if ($(window).width() <= 991) {
+        $('body').toggleClass('no_scroll');
+        $('.wrap-search-input').toggleClass('active');
+        $('.wrap-search-input input').focus();
+    }
+});
+//end search mobile
+
+
 //accordion
 $('.acc-title').click(function(e) {
 
@@ -148,9 +159,8 @@ $('.home-slider-blog').slick({
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 992,
             settings: {
-                arrows: false,
                 dots: true,
             }
         },
@@ -226,15 +236,7 @@ $('.mutliSelect input[type="checkbox"]').on('click', function() {
 
 
 
-//search mobile
-$('.submit-search').on('click', function(){
-    if ($(window).width() <= 991) {
-        $('body').toggleClass('no_scroll');
-        $('.wrap-search-input').toggleClass('active');
-        $('.wrap-search-input input').focus();
-    }
-});
-//end search mobile
+
 
 
 

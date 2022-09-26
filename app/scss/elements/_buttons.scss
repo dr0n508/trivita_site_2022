@@ -7,7 +7,6 @@
   line-height: 1.2;
   letter-spacing: 0.04em;
   border-radius: $border-radius;
-  //min-width: 230px;
   text-transform: uppercase;
 }
 
@@ -17,6 +16,7 @@
   box-shadow: 0px 4px 14px 0px #94B38199;
   background: linear-gradient(97.93deg, #76B74B -2.23%, #438D13 105.8%);
   min-width: 230px;
+  @extend.animate;
   &:hover {
     color: white;
     background: linear-gradient(97.93deg, #438D13 -2.23%, #76B74B 105.8%);

@@ -6,8 +6,7 @@
 @import "vars";
 @import "fonts";
 @import "elements/inputs";
-//@import "elements/masonry";
-@import "elements/masonry2";
+@import "elements/masonry";
 @import "elements/tabs";
 @import "elements/stars-block";
 @import "elements/accordion";
@@ -20,6 +19,7 @@
 @import "header";
 @import "footer";
 @import "products";
+@import "sections_home";
 
 
 
@@ -161,6 +161,10 @@ button, .btn {
   text-align: center;
 }
 
+.align-center {
+  align-items: center;
+}
+
 .ttu {
   text-transform: uppercase;
 }
@@ -221,7 +225,7 @@ button, .btn {
   }
 }
 
-@import "sections";
+
 
 
 
