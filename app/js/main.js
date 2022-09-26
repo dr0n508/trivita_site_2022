@@ -32,10 +32,7 @@
 	});
 
 
-
-
 //accordion
-
 $('.acc-title').click(function(e) {
 
     console.log($(this).hasClass('acc-faq'));
@@ -75,6 +72,8 @@ $('.acc-title').click(function(e) {
 // });
 
 
+
+/////sliders//////
 $('.top-product-slider').slick({
     autoplay: false,
     dots: false,
@@ -127,9 +126,6 @@ $('.slider-stories').slick({
     arrows: true,
     prevArrow: $('.slider-stories-navigation .slick-prev'),
     nextArrow: $('.slider-stories-navigation .slick-next')
-
-
-
 });
 
 $('.home-slider-blog').slick({
@@ -159,15 +155,12 @@ $('.home-slider-blog').slick({
             }
         },
 
-
     ]
 
-
-
 });
+/////end sliders//////
 
 //custom quantity input
-
 (function quantityProducts() {
     var $quantityArrowMinus = $(".quantity-arrow-minus");
     var $quantityArrowPlus = $(".quantity-arrow-plus");
@@ -190,10 +183,7 @@ $('.home-slider-blog').slick({
 })();
 
 
-//select
-
-
-
+//select catrgories
 $(".dropdown-select .wrapper-select-dropdown a").on('click', function() {
     if ($(window).width() <= 991) {
         $(".dropdown-select .wrapper-checkbox-select ul").slideToggle('fast');
@@ -214,13 +204,9 @@ function getSelectedValue(id) {
 $(document).bind('click', function(e) {
     var $clicked = $(e.target);
 
-
     if ($(window).width() <= 991) {
         if (!$clicked.parents().hasClass("dropdown-select")) $(".dropdown-select .wrapper-checkbox-select ul").hide();
     }
-
-
-
 
 });
 
@@ -240,58 +226,49 @@ $('.mutliSelect input[type="checkbox"]').on('click', function() {
 
     }
 });
-
-///end select
+///end select categories
 
 
 
 //search mobile
-
-
 $('.submit-search').on('click', function(){
     if ($(window).width() <= 991) {
-
+        $('body').toggleClass('no_scroll');
         $('.wrap-search-input').toggleClass('active');
         $('.wrap-search-input input').focus();
-
-
-
-
-
     }
 });
-
-
+//end search mobile
 
 
 
 
 
 // Custom select
-$('.current_option').on('click', function(){
-	if (!$(this).closest('.select').hasClass('active')) {
-		$('.select').removeClass('active');
-		$('.options').slideUp(200);
-		$(this).closest('.select').addClass('active');
-		$(this).closest('.select').find('.options').slideDown(200);
-	} else {
-		$(this).closest('.select').removeClass('active');
-		$(this).closest('.select').find('.options').slideUp(200);
-	}
-});
-$('.option').on('click', function(){
-	$(this).closest('.select').find('.current_option').text($(this).text());
-	$(this).closest('.select').find('.select_input').val($(this).text());
-	$(this).closest('.select').removeClass('active');
-	$('.options').slideUp(200);
-});
-$(document).on('click', function(e) {
-	if (!$(e.target).closest('.select').length) {
-		$('.select').removeClass('active');
-		$('.options').slideUp(200);
-	}
-	e.stopPropagation();
-});
+// $('.current_option').on('click', function(){
+// 	if (!$(this).closest('.select').hasClass('active')) {
+// 		$('.select').removeClass('active');
+// 		$('.options').slideUp(200);
+// 		$(this).closest('.select').addClass('active');
+// 		$(this).closest('.select').find('.options').slideDown(200);
+// 	} else {
+// 		$(this).closest('.select').removeClass('active');
+// 		$(this).closest('.select').find('.options').slideUp(200);
+// 	}
+// });
+// $('.option').on('click', function(){
+// 	$(this).closest('.select').find('.current_option').text($(this).text());
+// 	$(this).closest('.select').find('.select_input').val($(this).text());
+// 	$(this).closest('.select').removeClass('active');
+// 	$('.options').slideUp(200);
+// });
+// $(document).on('click', function(e) {
+// 	if (!$(e.target).closest('.select').length) {
+// 		$('.select').removeClass('active');
+// 		$('.options').slideUp(200);
+// 	}
+// 	e.stopPropagation();
+// });
 
 // Tabs TC
 $('.tab').on('click', function(){
@@ -303,13 +280,9 @@ $('.tab').on('click', function(){
 });
 
 
-
-
-
-
-$(".fa-search").click(function() {
-    $(".togglesearch").toggle();
-    $("input[type='text']").focus();
-});
+// $(".fa-search").click(function() {
+//     $(".togglesearch").toggle();
+//     $("input[type='text']").focus();
+// });
 
 
