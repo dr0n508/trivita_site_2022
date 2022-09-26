@@ -4,11 +4,8 @@
   display: flex;
   align-items: center;
   border: solid 2px $text-gray;
-  //width: max-content;
   padding: 2px;
   border-radius: 50px;
-
-
   input[type="number"]::-webkit-inner-spin-button,
   input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -23,7 +20,6 @@
   .quantity-arrow-plus {
     cursor: pointer;
     background: none;
-    //background: #F6F6F6;
     border: none;
     outline: none;
     color: $text-gray;
@@ -34,12 +30,7 @@
     height: 100%;
     padding: 3px 20px 7px;
     font-family: $default;
-
     border-radius: 50%;
-
-    //display: table-cell;
-    //vertical-align: middle;
-
     @extend .animate;
     &:hover {
       background: #dedede;
@@ -50,19 +41,19 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 25px;
-    //height: 40px;
     width: 65px;
     outline: none;
     border: none;
     text-align: center;
     font-family: $default;
-    //background: #F6F6F6;
+  }
+
+  @media (max-width: 992px) {
   }
 }
 
 
 //custom radio button
-
 .custom-radio {
   display: inline-flex;
   .option{
@@ -102,6 +93,19 @@
   #option-1:checked:checked ~ .option-1 span,
   #option-2:checked:checked ~ .option-2 span{
     color: #fff;
+  }
+  @media (max-width: 992px) {
+    .option {
+      height: 50px;
+      padding-left: 24px;
+      padding-right: 24px;
+      margin-right: 5px;
+      &:last-child {
+      }
+      span {
+        font-size: 18px;
+      }
+    }
   }
 }
 
