@@ -1,4 +1,5 @@
 .dropdown-select {
+  margin: 0 0.5rem;
   span.value {
     display: none;
   }
@@ -10,7 +11,7 @@
     line-height: 24px;
     overflow: hidden;
     background-color: white;
-    border: solid 1px $text;
+    border: solid 1px $text-gray;
     border-radius: $border-radius;
 
     &:after {
@@ -59,7 +60,7 @@
         top: 2px;
         width: 100%;
         background-color: white;
-        border: solid 1px $text;
+        border: solid 1px $text-gray;
         border-radius: $border-radius;
         li {
           font-size: 16px;
