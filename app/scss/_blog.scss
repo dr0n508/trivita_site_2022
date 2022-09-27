@@ -13,14 +13,24 @@
   }
 }
 
+.form-wripper {
+  @media (max-width: 992px) {
+    order: -1;
+  }
+}
+
 .form-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   padding: 50px 40px;
   height: 100%;
   background-color: #F1F1F1;
   border-radius: $border-radius;
   h2 {
     margin-bottom: 24px;
-    font-size: 28px;
+    font-size: 26px;
     color: $text;
     font-weight: 700;
   }
@@ -53,7 +63,10 @@
 .articles-blog {
   article.first-article {
     .wrapper-img {
-      padding-top: 70%;
+      padding-top: 80%;
+      @media (max-width: 992px) {
+        padding-top: 60%;
+      }
     }
     .title-article {
       font-size: 32px;
