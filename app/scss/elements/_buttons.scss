@@ -6,6 +6,7 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.04em;
+  border: none;
   border-radius: $border-radius;
   text-transform: uppercase;
 }
@@ -25,6 +26,7 @@
 
 .btn-transparent {
   color: $accent-text;
+  border: none;
   border: solid 2px $accent-text;
   &:hover {
     color: white;
