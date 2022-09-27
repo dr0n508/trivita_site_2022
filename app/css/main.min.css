@@ -3201,7 +3201,18 @@
   .articles-blog article .title-article {
     font-size: 20px; }
   .articles-blog article p {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .articles-blog article .text-article {
+    margin-bottom: 0; }
+  .articles-blog article .btn-accent.btn-transparent {
+    border: none;
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 14px; }
+    .articles-blog article .btn-accent.btn-transparent:hover {
+      color: #438D13;
+      background-color: white;
+      text-decoration: underline; } }
 
 ::-webkit-input-placeholder {
   color: #465377; }

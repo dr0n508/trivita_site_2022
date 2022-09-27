@@ -43,20 +43,33 @@ $('.submit-search').on('click', function(){
 //end search mobile
 
 
-//sameHeight
-maintainSameHeight($('[data-same-height="title-article"]'));
+// function sameHeight article-blog title
 
-function maintainSameHeight($list) {
-    var height = 0;
+if ($(window).width() >= 640) {
 
-    $list.each(function () {
-        var $this = $(this);
-        if ($this.outerHeight() > height) {
-            height = $this.outerHeight();
-        }
+    $.fn.equalHeights = function(){
+
+        let maxHeight = 0;
+
+        $(this).each(function(){
+
+            maxHeight = Math.max($(this).height(), maxHeight);
+
+        });
+
+        $(this).each(function(){
+
+            $(this).height(maxHeight + 20);
+
+        });
+
+    };
+
+    $('.list-articles').each(function() {
+
+        $(this).find('[data-same-height="title-article"]').equalHeights();
+
     });
-
-    $list.css("height", height);
 }
 
 
