@@ -22,7 +22,10 @@
     .footer-logo {
       margin-bottom: 24px;
       img {
-        width: 216px;
+        display: flex;
+        width: 216.5px;
+        height: auto;
+        //height: 98px;
       }
     }
     .logo-wrapper {
