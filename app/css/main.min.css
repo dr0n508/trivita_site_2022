@@ -3062,18 +3062,48 @@
     color: #5F667A; }
 
 .form-subscribe {
-  padding: 50px;
+  padding: 50px 40px;
   height: 100%;
   background-color: #F1F1F1;
   -webkit-border-radius: 8px;
           border-radius: 8px; }
+  .form-subscribe h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: #171B27;
+    font-weight: 700; }
+  .form-subscribe .sub-title-form {
+    font-size: 20px; }
+  .form-subscribe p {
+    font-size: 18px;
+    font-weight: 400; }
+    .form-subscribe p a {
+      color: #438D13;
+      text-decoration: underline; }
   .form-subscribe input {
+    margin-bottom: 8px;
+    padding: 16px 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border: solid 1px #D0D5DD;
+    -webkit-border-radius: 8px;
+            border-radius: 8px; }
+  .form-subscribe button.btn-accent {
     width: 100%; }
+
+.articles-blog article.first-article .wrapper-img {
+  padding-top: 70%; }
 
 .articles-blog article.first-article .title-article {
   font-size: 32px; }
 
-.articles-blog article.small-article .wrapper-img {
+.articles-blog article.small-article {
+  margin-bottom: 20px; }
+  .articles-blog article.small-article .wrapper-img {
+    margin-bottom: 20px; }
+
+.articles-blog article .wrapper-img {
   display: block;
   position: relative;
   padding-top: 100%;
@@ -3081,9 +3111,8 @@
   height: 0;
   overflow: hidden;
   -webkit-border-radius: 8px;
-          border-radius: 8px;
-  margin-bottom: 20px; }
-  .articles-blog article.small-article .wrapper-img img {
+          border-radius: 8px; }
+  .articles-blog article .wrapper-img img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -3097,23 +3126,21 @@
     max-height: 100%;
     max-width: 100%; }
 
-.articles-blog article {
-  margin-bottom: 20px; }
-  .articles-blog article .wrapper-img {
-    margin-bottom: 20px; }
-  .articles-blog article .date-article {
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #5F667A; }
-  .articles-blog article .title-article {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-weight: 700; }
-  .articles-blog article p {
-    font-size: 20px;
-    font-weight: 400;
-    color: #5F667A; }
+.articles-blog article .date-article {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #5F667A; }
+
+.articles-blog article .title-article {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700; }
+
+.articles-blog article p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #5F667A; }
 
 ::-webkit-input-placeholder {
   color: #465377; }

@@ -14,22 +14,58 @@
 }
 
 .form-subscribe {
-  padding: 50px;
+  padding: 50px 40px;
   height: 100%;
   background-color: #F1F1F1;
   border-radius: $border-radius;
+  h2 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    color: $text;
+    font-weight: 700;
+  }
+  .sub-title-form {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    a {
+      color: $accent-text;
+      text-decoration: underline;
+    }
+  }
   input {
+    margin-bottom: 8px;
+    padding: 16px 20px;
     width: 100%;
+    outline: none;
+    border: none;
+    border: solid 1px #D0D5DD;
+    border-radius: $border-radius;
+  }
+  button.btn-accent {
+    width: 100%;
+    //margin-top: 25px;
   }
 }
 
 .articles-blog {
   article.first-article {
+    .wrapper-img {
+      padding-top: 70%;
+    }
     .title-article {
       font-size: 32px;
     }
   }
   article.small-article {
+    margin-bottom: 20px;
+    .wrapper-img {
+      margin-bottom: 20px;
+    }
+  }
+  article {
     .wrapper-img {
       display: block;
       position: relative;
@@ -38,7 +74,7 @@
       height: 0;
       overflow: hidden;
       border-radius: $border-radius;
-      margin-bottom: 20px;
+
       img {
         position: absolute;
         top: 50%;
@@ -51,12 +87,6 @@
         max-height: 100%;
         max-width: 100%;
       }
-    }
-  }
-  article {
-    margin-bottom: 20px;
-    .wrapper-img {
-      margin-bottom: 20px;
     }
     .date-article {
       margin-bottom: 20px;
