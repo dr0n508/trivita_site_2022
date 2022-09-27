@@ -7,6 +7,10 @@
   }
 }
 
+.tabs.tabs-blog {
+  justify-content: center;
+}
+
 .tc_content {
   display: none;
 }
@@ -16,6 +20,7 @@
 
 .btn-tab {
   padding: 16px 32px;
+  margin: 0 5px;
   cursor: pointer;
   background-color: #F0F0F0;
   border-radius: 50px;

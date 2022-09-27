@@ -43,6 +43,23 @@ $('.submit-search').on('click', function(){
 //end search mobile
 
 
+//sameHeight
+maintainSameHeight($('[data-same-height="title-article"]'));
+
+function maintainSameHeight($list) {
+    var height = 0;
+
+    $list.each(function () {
+        var $this = $(this);
+        if ($this.outerHeight() > height) {
+            height = $this.outerHeight();
+        }
+    });
+
+    $list.css("height", height);
+}
+
+
 //accordion
 $('.acc-title').click(function(e) {
 

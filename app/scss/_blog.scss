@@ -11,6 +11,16 @@
     font-weight: 400;
     color: $text-gray;
   }
+  @media (max-width: 1440px) {
+    padding: 60px 0;
+  }
+  @media (max-width: 992px) {
+    padding: 40px 0;
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .form-wripper {
@@ -56,7 +66,15 @@
   }
   button.btn-accent {
     width: 100%;
-    //margin-top: 25px;
+  }
+  @media (max-width: 1440px) {
+    padding: 40px 25px;
+    h2 {
+      font-size: 24px;
+    }
+    .sub-title-form, p {
+      font-size: 16px;
+    }
   }
 }
 
@@ -70,6 +88,9 @@
     }
     .title-article {
       font-size: 32px;
+      @media (max-width: 992px) {
+        font-size: 20px;
+      }
     }
   }
   article.small-article {
@@ -116,6 +137,22 @@
       font-size: 20px;
       font-weight: 400;
       color: $text-gray;
+    }
+    p.text-article {
+      line-height: 1.8;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      height: 7em;
+    }
+    @media (max-width: 992px) {
+      .title-article {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
     }
   }
 }

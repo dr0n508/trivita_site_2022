@@ -1273,6 +1273,11 @@
     .tabs {
       margin-bottom: 20px; } }
 
+.tabs.tabs-blog {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .tc_content {
   display: none; }
 
@@ -1281,6 +1286,7 @@
 
 .btn-tab {
   padding: 16px 32px;
+  margin: 0 5px;
   cursor: pointer;
   background-color: #F0F0F0;
   -webkit-border-radius: 50px;
@@ -1707,7 +1713,8 @@
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    list-style: none; }
     .pagination-block .numbers-page .item a {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2443,12 +2450,14 @@
       .tabs-section .supplements-logos li:last-child {
         margin-right: 0; }
   @media (max-width: 992px) {
-    .tabs-section .wraper-tabs {
-      overflow-x: scroll; }
-      .tabs-section .wraper-tabs .tabs .tab {
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
-        margin: 0 5px; } }
+    .tabs-section {
+      padding: 30px 0; }
+      .tabs-section .wraper-tabs {
+        overflow-x: scroll; }
+        .tabs-section .wraper-tabs .tabs .tab {
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
+          margin: 0 5px; } }
   @media (max-width: 768px) {
     .tabs-section .tab-swipe-label {
       display: -webkit-box;
@@ -3060,6 +3069,15 @@
     font-size: 20px;
     font-weight: 400;
     color: #5F667A; }
+  @media (max-width: 1440px) {
+    .header-vitajournal {
+      padding: 60px 0; } }
+  @media (max-width: 992px) {
+    .header-vitajournal {
+      padding: 40px 0; }
+      .header-vitajournal h1 {
+        font-size: 28px;
+        margin-bottom: 10px; } }
 
 @media (max-width: 992px) {
   .form-wripper {
@@ -3107,6 +3125,13 @@
             border-radius: 8px; }
   .form-subscribe button.btn-accent {
     width: 100%; }
+  @media (max-width: 1440px) {
+    .form-subscribe {
+      padding: 40px 25px; }
+      .form-subscribe h2 {
+        font-size: 24px; }
+      .form-subscribe .sub-title-form, .form-subscribe p {
+        font-size: 16px; } }
 
 .articles-blog article.first-article .wrapper-img {
   padding-top: 80%; }
@@ -3116,6 +3141,9 @@
 
 .articles-blog article.first-article .title-article {
   font-size: 32px; }
+  @media (max-width: 992px) {
+    .articles-blog article.first-article .title-article {
+      font-size: 20px; } }
 
 .articles-blog article.small-article {
   margin-bottom: 20px; }
@@ -3160,6 +3188,20 @@
   font-size: 20px;
   font-weight: 400;
   color: #5F667A; }
+
+.articles-blog article p.text-article {
+  line-height: 1.8;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 7em; }
+
+@media (max-width: 992px) {
+  .articles-blog article .title-article {
+    font-size: 20px; }
+  .articles-blog article p {
+    font-size: 16px; } }
 
 ::-webkit-input-placeholder {
   color: #465377; }
