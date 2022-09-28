@@ -73,6 +73,9 @@
     &.active::after {
       content: "\e911";
     }
+    @media (max-width: 640px) {
+      font-size: 20px;
+    }
   }
   .acc-panel {
     font-size: 18px;

@@ -73,11 +73,6 @@
     .price {
       font-size: 20px;
     }
-    .btn-accent.btn-transparent {
-      //font-size: 18px;
-      //padding-left: 20px;
-      //padding-right: 20px;
-    }
   }
   .button-product-cart {
     position: absolute;
@@ -90,6 +85,7 @@
     justify-content: center;
     background: rgba(255,255,255,0.6);
     border-radius: $border-radius;
+    font-size: 24px;
     &:hover {
       background: rgba(255,255,255,0.9);
     }
@@ -107,6 +103,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      .icon {
+        font-size: 24px;
+      }
       p {
         color: $accent-text;
         text-transform: uppercase;
@@ -118,11 +117,11 @@
   }
 }
 
-
 /////single-product
 .single-product {
   padding: 60px 0;
   .row {
+    padding-bottom: 30px;
     border-bottom: solid 1px #CDCDCD;
   }
   .wrapper-info {
@@ -283,12 +282,14 @@
     li {
       font-size: 18px;
       font-weight: 400;
+      line-height: 1.8;
       color: $text-gray;
     }
   }
 
   .list-references {
     list-style-type: decimal;
+    margin-left: 16px;
     li {
       color: $text;
     }

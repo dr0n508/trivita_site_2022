@@ -1484,6 +1484,9 @@
     color: #44578F; }
   .acc.faq-accordion .acc-title.active::after {
     content: "\e911"; }
+  @media (max-width: 640px) {
+    .acc.faq-accordion .acc-title {
+      font-size: 20px; } }
 
 .acc.faq-accordion .acc-panel {
   font-size: 18px;
@@ -2220,6 +2223,10 @@
     margin-bottom: 30px; }
     .footer .social-list li:last-child {
       margin-left: 30px; }
+    .footer .social-list .icon {
+      font-size: 30px; }
+    .footer .social-list .icon.icon-fb-icon {
+      font-size: 36px; }
   .footer .bottom-footer {
     margin-top: 30px;
     padding: 60px 0;
@@ -2380,7 +2387,8 @@
             justify-content: center;
     background: rgba(255, 255, 255, 0.6);
     -webkit-border-radius: 8px;
-            border-radius: 8px; }
+            border-radius: 8px;
+    font-size: 24px; }
     .product-cart .button-product-cart:hover {
       background: rgba(255, 255, 255, 0.9); }
   .product-cart .more-info-block {
@@ -2404,6 +2412,8 @@
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      .product-cart .more-info-block .wrap .icon {
+        font-size: 24px; }
       .product-cart .more-info-block .wrap p {
         color: #438D13;
         text-transform: uppercase;
@@ -2414,6 +2424,7 @@
 .single-product {
   padding: 60px 0; }
   .single-product .row {
+    padding-bottom: 30px;
     border-bottom: solid 1px #CDCDCD; }
   .single-product .wrapper-info {
     padding-left: 20px;
@@ -2534,9 +2545,11 @@
     .tabs-section .simple-list li {
       font-size: 18px;
       font-weight: 400;
+      line-height: 1.8;
       color: #5F667A; }
   .tabs-section .list-references {
-    list-style-type: decimal; }
+    list-style-type: decimal;
+    margin-left: 16px; }
     .tabs-section .list-references li {
       color: #171B27; }
     .tabs-section .list-references a {
@@ -2693,8 +2706,8 @@
     text-align: left;
     font-weight: 800; }
   .offer-section h2 {
-    font-size: 20px;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    font-size: 20px; }
   .offer-section .btn-accent.btn-gradient {
     margin-bottom: 60px; }
   .offer-section p {
@@ -2720,20 +2733,20 @@
     position: relative;
     display: block;
     margin: 0 auto; }
-  @media (max-width: 1200px) {
+  @media (max-width: 1140px) {
     .offer-section h1.header-section {
       font-size: 50px; }
     .offer-section h2 {
-      font-size: 18px;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+      font-size: 18px; } }
   @media (max-width: 991px) {
     .offer-section {
       padding: 30px 0; }
       .offer-section h1.header-section {
         font-size: 36px; }
       .offer-section h2 {
-        font-size: 18px;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        font-size: 18px; }
       .offer-section .btn-accent.btn-gradient {
         margin-bottom: 12px; } }
 
@@ -2844,9 +2857,9 @@
 
 .members-stories-section .slider-stories-navigation {
   position: relative;
+  margin: 50px 150px;
   width: 150px;
-  height: 30px;
-  margin: 50px 150px; }
+  height: 30px; }
   @media (max-width: 1200px) {
     .members-stories-section .slider-stories-navigation {
       margin: 20px auto; } }
@@ -2858,11 +2871,11 @@
   margin: 10px; }
 
 .members-stories-section .blockquote-stories {
+  position: relative;
   padding: 60px;
   background-color: white;
   -webkit-border-radius: 8px;
-          border-radius: 8px;
-  position: relative; }
+          border-radius: 8px; }
   .members-stories-section .blockquote-stories:before, .members-stories-section .blockquote-stories:after {
     position: absolute;
     color: #1b75bb;
@@ -2878,10 +2891,10 @@
     bottom: -8px;
     color: #1b75bb; }
   .members-stories-section .blockquote-stories p {
-    font-size: 24px;
-    line-height: 1.9;
     position: relative;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    font-size: 24px;
+    line-height: 1.9; }
   .members-stories-section .blockquote-stories figcaption {
     font-size: 24px;
     color: #5F667A; }
@@ -2894,15 +2907,15 @@
   .members-stories-section .blockquote-stories {
     padding: 26px 16px; }
     .members-stories-section .blockquote-stories p {
-      font-size: 18px;
-      margin-bottom: 24px; }
+      margin-bottom: 24px;
+      font-size: 18px; }
     .members-stories-section .blockquote-stories figcaption {
       font-size: 18px; } }
 
 .home-blog-section h3 {
-  font-size: 32px;
   margin-top: 24px;
   margin-bottom: 24px;
+  font-size: 32px;
   font-weight: 800; }
 
 .home-blog-section .wrapper-articles {
@@ -2946,9 +2959,9 @@
     margin: 30px auto 40px;
     width: 80%;
     font-size: 120px;
+    font-weight: 800;
     line-height: 1.1;
-    color: white;
-    font-weight: 800; }
+    color: white; }
   .bottom-section .hog-section .wide-btn {
     width: 100%;
     text-align: center;
@@ -2964,11 +2977,11 @@
 .bottom-section .just-pray-it-section {
   margin-top: 40px; }
   .bottom-section .just-pray-it-section .wraper-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
     background: url("../img/jpit-bg.jpg") 50% 50% no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
-    padding-top: 80px;
-    padding-bottom: 80px;
     text-align: center;
     color: white; }
     .bottom-section .just-pray-it-section .wraper-section .logo-jpit {
@@ -2983,9 +2996,9 @@
               justify-content: center;
       margin: 0 50px 50px 50px; }
       .bottom-section .just-pray-it-section .wraper-section .logo-jpit .line-left, .bottom-section .just-pray-it-section .wraper-section .logo-jpit .line-right {
+        display: inline-block;
         width: 1px;
         height: 1px;
-        display: inline-block;
         background-color: white;
         -webkit-box-flex: 100;
         -ms-flex-positive: 100;

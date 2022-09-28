@@ -55,8 +55,6 @@
   }
 }
 
-
-
 ////offer-section////
 .offer-section {
   color: $text-gray;
@@ -68,8 +66,8 @@
     font-weight: 800;
   }
   h2 {
-    font-size: 20px;
     margin-bottom: 60px;
+    font-size: 20px;
   }
   .btn-accent.btn-gradient {
     margin-bottom: 60px;
@@ -105,13 +103,13 @@
     display: block;
     margin: 0 auto;
   }
-  @media (max-width: 1200px) {
+  @media (max-width: 1140px) {
     h1.header-section {
       font-size: 50px;
     }
     h2 {
-      font-size: 18px;
       margin-bottom: 30px;
+      font-size: 18px;
     }
   }
   @media (max-width: 991px) {
@@ -120,8 +118,8 @@
       font-size: 36px;
     }
     h2 {
-      font-size: 18px;
       margin-bottom: 30px;
+      font-size: 18px;
     }
     .btn-accent.btn-gradient {
       margin-bottom: 12px;
@@ -212,7 +210,6 @@
         margin-left: 60px;
       }
     }
-
   }
   .pm-list {
     margin-top: 30px;
@@ -223,7 +220,6 @@
     font-weight: 700;
     list-style-position: inside;
     list-style: disc;
-
   }
   @media (max-width: 992px) {
     padding: 20px 0 40px;
@@ -271,9 +267,9 @@
   }
   .slider-stories-navigation {
     position: relative;
+    margin: 50px 150px;
     width: 150px;
     height: 30px;
-    margin: 50px 150px;
     @media (max-width: 1200px) {
       margin: 20px auto;
     }
@@ -285,10 +281,10 @@
     margin: 10px;
   }
   .blockquote-stories {
+    position: relative;
     padding: 60px;
     background-color: white;
     border-radius: $border-radius;
-    position: relative;
     &:before,
     &:after {
       position: absolute;
@@ -308,11 +304,10 @@
       color: #1b75bb;
     }
     p {
-      font-size: 24px;
-      line-height: 1.9;
       position: relative;
       margin-bottom: 80px;
-
+      font-size: 24px;
+      line-height: 1.9;
     }
     figcaption {
       font-size: 24px;
@@ -331,8 +326,8 @@
     .blockquote-stories {
       padding: 26px 16px;
       p {
-        font-size: 18px;
         margin-bottom: 24px;
+        font-size: 18px;
       }
       figcaption  {
         font-size: 18px;
@@ -344,9 +339,9 @@
 ///home-blog-section///
 .home-blog-section {
   h3 {
-    font-size: 32px;
     margin-top: 24px;
     margin-bottom: 24px;
+    font-size: 32px;
     font-weight: 800;
   }
   .wrapper-articles {
@@ -399,9 +394,9 @@
       margin: 30px auto 40px;
       width: 80%;
       font-size: 120px;
+      font-weight: 800;
       line-height: 1.1;
       color: white;
-      font-weight: 800;
     }
     .wide-btn {
       width: 100%;
@@ -420,26 +415,24 @@
       }
     }
   }
-
   .just-pray-it-section {
     margin-top: 40px;
     .wraper-section {
-      background: url("../img/jpit-bg.jpg") 50% 50% no-repeat;
-      background-size: cover;
       padding-top: 80px;
       padding-bottom: 80px;
+      background: url("../img/jpit-bg.jpg") 50% 50% no-repeat;
+      background-size: cover;
       text-align: center;
       color: white;
-
       .logo-jpit {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 50px 50px 50px;
         .line-left, .line-right {
+          display: inline-block;
           width: 1px;
           height: 1px;
-          display: inline-block;
           background-color: white;
           -webkit-box-flex: 100;
           -webkit-flex-grow: 100;
