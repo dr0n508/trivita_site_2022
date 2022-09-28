@@ -1,38 +1,47 @@
 ////promo-section////
 .promo-section {
-  padding: 12px 0;
+  padding: 20px 0;
   text-align: center;
   background-color: $accent;
   color: white;
-  p {
+  .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    a {
+      display: block;
+    }
   }
   .promo-link {
-    display: flex;
-    align-items: center;
+    display: block;
+    min-width: 280px;
     margin-left: 20px;
     font-size: 20px;
     text-decoration: underline;
     text-transform: uppercase;
     font-weight: 500;
-    .icon {
-      margin-left: 32px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "\e90d";
+      font-family: icomoon !important;
       width: 48px;
       height: 48px;
+      line-height: 48px;
+      top: 50%;
+      right: -60px;
+      transform: translateY(-50%);
+      color: $accent;
       border-radius: 50%;
       background-color: white;
-      text-decoration: none;
-      text-align: center;
-      font-size: 20px;
-      line-height: 48px;
-      color: $accent;
     }
   }
   @media (max-width: 991px) {
-    p {
+    .wrapper {
       flex-direction: column;
+      .promo-link:after {
+        display: none;
+      }
     }
   }
 }
