@@ -1915,6 +1915,8 @@
         display: -ms-flexbox;
         display: flex;
         position: relative; }
+        .header .top-line .top-right-menu .cart-button .icon.icon-buy {
+          font-size: 24px; }
         .header .top-line .top-right-menu .cart-button .quantity-goods {
           position: absolute;
           right: -10px;
@@ -2956,7 +2958,8 @@
   -webkit-background-size: cover;
           background-size: cover; }
   .bottom-section .hog-section .hog-logo img {
-    width: 200px; }
+    width: 300px;
+    height: auto; }
   .bottom-section .hog-section h3 {
     margin: 30px auto 40px;
     width: 80%;
