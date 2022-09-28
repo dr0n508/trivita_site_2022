@@ -343,9 +343,6 @@ $('.tab').on('click', function(){
 /////
 
 const modalTriggers = document.querySelectorAll('.popup-play');
-// const bodyBlackout = document.querySelector('.body-blackout');
-
-// console.log(modalTriggers);
 
 modalTriggers.forEach(trigger => {
 
@@ -353,19 +350,19 @@ modalTriggers.forEach(trigger => {
 
         const { popupTrigger } = trigger.dataset;
 
-        const popupModal = document.querySelector(`[data-player="${popupTrigger}"]`);
-        const popupPlay = document.querySelector(`.popup-play[data-popup-trigger="${popupTrigger}"]`);
-        const popupPause = document.querySelector(`.popup-pause[data-popup-trigger="${popupTrigger}"]`);
+        const player = document.querySelector(`[data-player="${popupTrigger}"]`);
+        const playerPlay = document.querySelector(`.popup-play[data-popup-trigger="${popupTrigger}"]`);
+        const playerPause = document.querySelector(`.popup-pause[data-popup-trigger="${popupTrigger}"]`);
 
-        popupModal.play();
-        popupPlay.style.display = "none";
-        popupPause.style.display = "inline-block";
+        player.play();
+        playerPlay.style.display = "none";
+        playerPause.style.display = "inline-block";
 
 
-        popupPause.addEventListener('click', () => {
-            popupModal.pause();
-            popupPause.style.display = "none";
-            popupPlay.style.display = "inline-block";
+        playerPause.addEventListener('click', () => {
+            player.pause();
+            playerPause.style.display = "none";
+            playerPlay.style.display = "inline-block";
         });
 
     })
