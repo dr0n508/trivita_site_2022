@@ -342,7 +342,7 @@ $('.tab').on('click', function(){
 
 /////
 
-const modalTriggers = document.querySelectorAll('.popup-trigger');
+const modalTriggers = document.querySelectorAll('.popup-play');
 // const bodyBlackout = document.querySelector('.body-blackout');
 
 // console.log(modalTriggers);
@@ -354,7 +354,7 @@ modalTriggers.forEach(trigger => {
         const { popupTrigger } = trigger.dataset;
 
         const popupModal = document.querySelector(`[data-player="${popupTrigger}"]`);
-        const popupPlay = document.querySelector(`.popup-trigger[data-popup-trigger="${popupTrigger}"]`);
+        const popupPlay = document.querySelector(`.popup-play[data-popup-trigger="${popupTrigger}"]`);
         const popupPause = document.querySelector(`.popup-pause[data-popup-trigger="${popupTrigger}"]`);
 
         popupModal.play();
