@@ -313,48 +313,20 @@ $('.tab').on('click', function(){
 //     $("input[type='text']").focus();
 // });
 
-///audio player
-
-// Grab ID of audio player
-// var podcastAudio = document.getElementById('podcast-audio');
-
-// Grab ID of play button
-// var playBtn = document.getElementById('podcast-play');
-
-// Grab ID of pause button
-// var pauseBtn = document.getElementById('podcast-pause');
-
-// Play audio & show pause btn
-// var playShow = function() {
-//     podcastAudio.play();
-//     playBtn.style.display = "none";
-//     pauseBtn.style.display = "inline-block";
-// };
-
-// Pause audio & show play btn
-// var pauseShow = function() {
-//     podcastAudio.pause();
-//     playBtn.style.display = "inline-block";
-//     pauseBtn.style.display = "none";
-// };
-
-
-
-/////
-
-const playerTriggers = document.querySelectorAll('.popup-play');
+///podcast player
+const playerTriggers = document.querySelectorAll('.player-play');
 
 playerTriggers.forEach(trigger => {
 
     trigger.addEventListener('click', () => {
 
-        const { popupTrigger } = trigger.dataset;
+        const { playerTrigger } = trigger.dataset;
 
-        console.log(popupTrigger)
+        console.log(playerTrigger)
 
-        const player = document.querySelector(`[data-player="${popupTrigger}"]`);
-        const playerPlay = document.querySelector(`.popup-play[data-popup-trigger="${popupTrigger}"]`);
-        const playerPause = document.querySelector(`.popup-pause[data-popup-trigger="${popupTrigger}"]`);
+        const player = document.querySelector(`[data-player="${playerTrigger}"]`);
+        const playerPlay = document.querySelector(`.player-play[data-player-trigger="${playerTrigger}"]`);
+        const playerPause = document.querySelector(`.player-pause[data-player-trigger="${playerTrigger}"]`);
 
         player.play();
         playerPlay.style.display = "none";
