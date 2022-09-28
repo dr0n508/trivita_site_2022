@@ -5,7 +5,6 @@
 
 @import "vars";
 @import "fonts";
-@import "promo-section";
 @import "elements/inputs";
 @import "elements/masonry";
 @import "elements/player";
@@ -13,20 +12,18 @@
 @import "elements/stars-block";
 @import "elements/accordion";
 @import "elements/buttons";
-@import "elements/typography";
 @import "elements/sliders";
 @import "elements/video";
 @import "elements/select";
 @import "elements/pagination";
 @import "header";
 @import "footer";
+@import "promo-section";
 @import "products";
 @import "sections_home";
 @import "team";
 @import "blog";
 @import "podcast";
-
-
 
 ::-webkit-input-placeholder {
 	color: lighten($text, 25%);
@@ -73,11 +70,8 @@ body {
 
 .main {
 	flex: 1 0 auto;
-	//padding-top: 249px;
-  @media (max-width: 992px) {
-    //padding-top: 72px;
-  }
 }
+
 .footer {
 	flex: 0 0 auto;
 }
@@ -126,11 +120,8 @@ button, .btn {
 	border-radius: 5px;
 	font-weight: bold;
 	@extend.animate;
-	&:hover {
-		//background: $bg;
-		//color: #ffffff;
-	}
 }
+
 .animate {
 	transition: all 0.3s ease;
 }
@@ -156,10 +147,6 @@ button, .btn {
 	margin: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-  @media (max-width: 991px) {
-    //padding-left: 10px;
-    //padding-right: 10px;
-  }
 }
 
 .text-center {
@@ -172,6 +159,56 @@ button, .btn {
 
 .ttu {
   text-transform: uppercase;
+}
+
+.gray-section {
+  background-color: #F1F1F1;
+}
+
+.header-section {
+  color: $text;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 991px) {
+  h1.header-section {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  h2.header-section {
+    font-size: 28px;
+  }
+}
+.wrapper-image {
+  position: relative;
+  display: flex;
+  img {
+    margin: 0 auto;
+  }
+}
+
+.point-decorate {
+  &:before {
+    content: url("../img/points.png");
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.point-decorate.decorate-left {
+  &:before {
+    left: -140px;
+    bottom: -70px;
+  }
+}
+
+.point-decorate.decorate-right {
+  &:before {
+    right: -50px;
+    bottom: -70px;
+  }
 }
 
 .show-mobile {
@@ -229,10 +266,6 @@ button, .btn {
     order: 3
   }
 }
-
-
-
-
 
 @import "media"; /* Always at the end*/
 
