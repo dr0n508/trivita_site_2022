@@ -342,13 +342,15 @@ $('.tab').on('click', function(){
 
 /////
 
-const modalTriggers = document.querySelectorAll('.popup-play');
+const playerTriggers = document.querySelectorAll('.popup-play');
 
-modalTriggers.forEach(trigger => {
+playerTriggers.forEach(trigger => {
 
     trigger.addEventListener('click', () => {
 
         const { popupTrigger } = trigger.dataset;
+
+        console.log(popupTrigger)
 
         const player = document.querySelector(`[data-player="${popupTrigger}"]`);
         const playerPlay = document.querySelector(`.popup-play[data-popup-trigger="${popupTrigger}"]`);
