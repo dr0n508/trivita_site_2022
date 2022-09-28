@@ -127,6 +127,9 @@
     border: none;
     background: none;
     flex-shrink: 0;
+    .icon {
+      font-size: 24px;
+    }
   }
   .wrap-search-input {
     width: 100%;

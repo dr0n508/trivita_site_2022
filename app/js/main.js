@@ -43,7 +43,7 @@
 	});
 
 
-//search mobile
+//Search mobile
 $('.submit-search').on('click', function(){
 
     if ($(window).width() <= 991) {
@@ -55,10 +55,8 @@ $('.submit-search').on('click', function(){
     }
 
 });
-//end search mobile
 
-
-// function sameHeight article-blog title
+//  SameHeight article-blog title
 if ($(window).width() >= 640) {
 
     $.fn.equalHeights = function(){
@@ -86,8 +84,7 @@ if ($(window).width() >= 640) {
     });
 }
 
-
-//accordion
+//Accordion
 $('.acc-title').click(function(e) {
 
     if ($(this).hasClass('acc-faq') || $(window).width() <= 1200) {
@@ -107,10 +104,9 @@ $('.acc-title').click(function(e) {
 
     }
 
-
 });
 
-/////sliders//////
+/////Sliders//////
 $('.top-product-slider').slick({
     autoplay: false,
     dots: false,
@@ -141,7 +137,6 @@ $('.top-product-slider').slick({
             breakpoint: 768,
             settings: {
                 arrows: false,
-                // centerMode: true,
                 centerPadding: '60px',
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -180,7 +175,6 @@ $('.home-slider-blog').slick({
             breakpoint: 1024,
             settings: {
                 arrows: false,
-
             }
         },
         {
@@ -193,9 +187,8 @@ $('.home-slider-blog').slick({
     ]
 
 });
-/////end sliders//////
 
-//custom quantity input
+//Custom quantity input
 (function quantityProducts() {
     var $quantityArrowMinus = $(".quantity-arrow-minus");
     var $quantityArrowPlus = $(".quantity-arrow-plus");
@@ -218,7 +211,7 @@ $('.home-slider-blog').slick({
 })();
 
 
-//select categories
+///Select categories
 $(".dropdown-select .wrapper-select-dropdown a").on('click', function() {
     if ($(window).width() <= 991) {
         $(".dropdown-select .wrapper-checkbox-select ul").slideToggle('fast');
@@ -257,10 +250,8 @@ $('.mutliSelect input[type="checkbox"]').on('click', function() {
 
     }
 });
-///end select categories
 
-
-// Tabs TC
+/// Tabs TC
 $('.tab').on('click', function(){
     $('.tab').removeClass('active');
     $(this).addClass('active');
@@ -269,7 +260,7 @@ $('.tab').on('click', function(){
 
 });
 
-///podcast player
+///Podcast player
 const playerTriggers = document.querySelectorAll('.player-play');
 
 playerTriggers.forEach(trigger => {
