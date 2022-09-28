@@ -1826,6 +1826,9 @@
         @media (max-width: 991px) {
           .header .top-line .top-right-menu a {
             margin-left: 10px; } }
+      .header .top-line .top-right-menu .call-phone span {
+        display: block;
+        min-width: 155px; }
       .header .top-line .top-right-menu .user-button {
         display: -webkit-box;
         display: -ms-flexbox;
