@@ -277,33 +277,18 @@
 
                     <div class="btn-wrapper">
                       <div class="player-ctrl btn-play-podcast">
-                        <a id="podcast-play" onclick="playShow()">
+                        <a class="popup-trigger" data-popup-trigger="modal2">
                           <span class="icon icon-play"></span>
                         </a>
-                        <a id="podcast-pause" onclick="pauseShow()" style="display:none;">
+                        <a class="popup-pause" data-popup-trigger="modal2" style="display:none;">
                           <span class="icon icon-pause2"></span>
                         </a>
                       </div>
 
                       <!-- Audio player -->
-                      <audio id="podcast-audio">
+                      <audio class="popup-modal shadow" data-popup-modal="modal2">
                         <source src="https://s3.amazonaws.com/cmb-portfolio-16/closer.m4a" type="audio/mp4">
                       </audio>
-                    </div>
-                  </li>
-
-                  <li class="podcast-item">
-                    <div class="content-wrapper">
-                      <p class="podcast-info"><span class="date-podcast">Aug 01,2022</span> &#8226; <span class="ttu">Episode 56</span></p>
-                      <h2 class="title-podcast">The Miracle Molecule…Benefits of Nitric Oxide</h2>
-                      <p class="text-podcast">Listen as Michael R. Ellison and Paul Bernitt, DHH, explore what is known as ‘the miracle molecule’ of nitric oxide. The abundant benefits of nitri Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolorum!</p>
-
-                      <a href="#" class="read-more-btn">Read More</a>
-                    </div>
-                    <div class="btn-wrapper">
-                      <a href="#" class="btn-play-podcast">
-                        <span class="icon icon-play"></span>
-                      </a>
                     </div>
                   </li>
 
@@ -315,27 +300,63 @@
 
                       <a href="#" class="read-more-btn">Read More</a>
                     </div>
+
                     <div class="btn-wrapper">
-                      <a href="#" class="btn-play-podcast">
-                        <span class="icon icon-play"></span>
-                      </a>
+                      <div class="player-ctrl btn-play-podcast">
+                        <a class="popup-trigger" data-popup-trigger="modal1">
+                          <span class="icon icon-play"></span>
+                        </a>
+                        <a class="popup-pause" data-popup-trigger="modal1" style="display:none;">
+                          <span class="icon icon-pause2"></span>
+                        </a>
+                      </div>
+
+                      <!-- Audio player -->
+                      <audio class="popup-modal shadow" data-popup-modal="modal1">
+                        <source src="https://mattbartley.github.io/AB-Audio-Player/assets/b.mp3" type="audio/mp4">
+                      </audio>
                     </div>
                   </li>
 
-                  <li class="podcast-item">
-                    <div class="content-wrapper">
-                      <p class="podcast-info"><span class="date-podcast">Aug 01,2022</span> &#8226; <span class="ttu">Episode 56</span></p>
-                      <h2 class="title-podcast">The Miracle Molecule…Benefits of Nitric Oxide</h2>
-                      <p class="text-podcast">Listen as Michael R. Ellison and Paul Bernitt, DHH, explore what is known as ‘the miracle molecule’ of nitric oxide. The abundant benefits of nitri Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolorum!</p>
+                  <!--<li class="podcast-item">-->
+                    <!--<div class="content-wrapper">-->
+                      <!--<p class="podcast-info"><span class="date-podcast">Aug 01,2022</span> &#8226; <span class="ttu">Episode 56</span></p>-->
+                      <!--<h2 class="title-podcast">The Miracle Molecule…Benefits of Nitric Oxide</h2>-->
+                      <!--<p class="text-podcast">Listen as Michael R. Ellison and Paul Bernitt, DHH, explore what is known as ‘the miracle molecule’ of nitric oxide. Aliquam consequatur est non nostrum quas quasi quos sapiente, veritatis vero. Incidunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, molestiae?</p>-->
 
-                      <a href="#" class="read-more-btn">Read More</a>
-                    </div>
-                    <div class="btn-wrapper">
-                      <a href="#" class="btn-play-podcast">
-                        <span class="icon icon-play"></span>
-                      </a>
-                    </div>
-                  </li>
+                      <!--<a href="#" class="read-more-btn">Read More</a>-->
+                    <!--</div>-->
+                    <!--<div class="btn-wrapper">-->
+                      <!--<div class="player-ctrl btn-play-podcast">-->
+                        <!--<a id="podcast-play" onclick="playShow()" class="play-trigger">-->
+                          <!--<span class="icon icon-play"></span>-->
+                        <!--</a>-->
+                        <!--<a id="podcast-pause" onclick="pauseShow()" style="display:none;">-->
+                          <!--<span class="icon icon-pause2"></span>-->
+                        <!--</a>-->
+                      <!--</div>-->
+
+                      <!--&lt;!&ndash; Audio player &ndash;&gt;-->
+                      <!--<audio id="podcast-audio">-->
+                        <!--<source src="https://s3.amazonaws.com/cmb-portfolio-16/closer.m4a" type="audio/mp4">-->
+                      <!--</audio>-->
+                    <!--</div>-->
+                  <!--</li>-->
+
+                  <!--<li class="podcast-item">-->
+                    <!--<div class="content-wrapper">-->
+                      <!--<p class="podcast-info"><span class="date-podcast">Aug 01,2022</span> &#8226; <span class="ttu">Episode 56</span></p>-->
+                      <!--<h2 class="title-podcast">The Miracle Molecule…Benefits of Nitric Oxide</h2>-->
+                      <!--<p class="text-podcast">Listen as Michael R. Ellison and Paul Bernitt, DHH, explore what is known as ‘the miracle molecule’ of nitric oxide. The abundant benefits of nitri Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolorum!</p>-->
+
+                      <!--<a href="#" class="read-more-btn">Read More</a>-->
+                    <!--</div>-->
+                    <!--<div class="btn-wrapper">-->
+                      <!--<a href="#" class="btn-play-podcast">-->
+                        <!--<span class="icon icon-play"></span>-->
+                      <!--</a>-->
+                    <!--</div>-->
+                  <!--</li>-->
 
                 </ul>
               </div>

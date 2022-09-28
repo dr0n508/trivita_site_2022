@@ -316,24 +316,57 @@ $('.tab').on('click', function(){
 ///audio player
 
 // Grab ID of audio player
-var podcastAudio = document.getElementById('podcast-audio');
+// var podcastAudio = document.getElementById('podcast-audio');
 
 // Grab ID of play button
-var playBtn = document.getElementById('podcast-play');
+// var playBtn = document.getElementById('podcast-play');
 
 // Grab ID of pause button
-var pauseBtn = document.getElementById('podcast-pause');
+// var pauseBtn = document.getElementById('podcast-pause');
 
 // Play audio & show pause btn
-var playShow = function() {
-    podcastAudio.play();
-    playBtn.style.display = "none";
-    pauseBtn.style.display = "inline-block";
-};
+// var playShow = function() {
+//     podcastAudio.play();
+//     playBtn.style.display = "none";
+//     pauseBtn.style.display = "inline-block";
+// };
 
 // Pause audio & show play btn
-var pauseShow = function() {
-    podcastAudio.pause();
-    playBtn.style.display = "inline-block";
-    pauseBtn.style.display = "none";
-};
+// var pauseShow = function() {
+//     podcastAudio.pause();
+//     playBtn.style.display = "inline-block";
+//     pauseBtn.style.display = "none";
+// };
+
+
+
+/////
+
+const modalTriggers = document.querySelectorAll('.popup-trigger');
+// const bodyBlackout = document.querySelector('.body-blackout');
+
+// console.log(modalTriggers);
+
+modalTriggers.forEach(trigger => {
+
+    trigger.addEventListener('click', () => {
+
+        const { popupTrigger } = trigger.dataset;
+
+        const popupModal = document.querySelector(`[data-popup-modal="${popupTrigger}"]`);
+        const popupPlay = document.querySelector(`.popup-trigger[data-popup-trigger="${popupTrigger}"]`);
+        const popupPause = document.querySelector(`.popup-pause[data-popup-trigger="${popupTrigger}"]`);
+
+        popupModal.play();
+        popupPlay.style.display = "none";
+        popupPause.style.display = "inline-block";
+
+
+        popupPause.addEventListener('click', () => {
+            popupModal.pause();
+            popupPause.style.display = "none";
+            popupPlay.style.display = "inline-block";
+        });
+
+    })
+});
