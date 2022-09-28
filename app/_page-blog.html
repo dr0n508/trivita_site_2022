@@ -274,14 +274,21 @@
 
                       <a href="#" class="read-more-btn">Read More</a>
                     </div>
+
                     <div class="btn-wrapper">
-                      <a href="#" class="btn-play-podcast">
-                        <span class="icon icon-play"></span>
+                      <div class="player-ctrl btn-play-podcast">
+                        <a id="podcast-play" onclick="playShow()">
+                          <span class="icon icon-play"></span>
+                        </a>
+                        <a id="podcast-pause" onclick="pauseShow()" style="display:none;">
+                          <span class="icon icon-pause2"></span>
+                        </a>
+                      </div>
 
-
-                        
-
-                      </a>
+                      <!-- Audio player -->
+                      <audio id="podcast-audio">
+                        <source src="https://s3.amazonaws.com/cmb-portfolio-16/closer.m4a" type="audio/mp4">
+                      </audio>
                     </div>
                   </li>
 
@@ -334,9 +341,6 @@
               </div>
             </div>
 
-
-
-
             <div class="pagination-block">
 
               <a href="#" class="btn-pagination">
@@ -379,10 +383,4 @@
       </div>
     </div>
   </section>
-
-  <div class="container">
-
-  </div>
-
-
 </main>
