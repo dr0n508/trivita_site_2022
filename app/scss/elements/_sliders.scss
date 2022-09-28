@@ -8,11 +8,9 @@
   .slick-list {
     margin: 0 100px;
   }
-
   .slick-next {
     right: 40px;
   }
-
   .slick-prev {
     left: 0;
   }
@@ -46,14 +44,16 @@
 .slick-next {
   right: 20px;
   &:before {
-    content: url("../../img/icon/arr-right-white.svg");
+    content: "\e90d";
+    font-family: icomoon !important;
   }
 }
 
 .slick-prev {
   left: -20px;
   &:before {
-    content: url("../../img/icon/arr-left-white.svg");
+    content: "\e90e";
+    font-family: icomoon !important;
   }
 }
 
@@ -65,16 +65,20 @@
   }
 }
 
-.slick-prev.slick-disabled {
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
   &:before {
-    content: url("../../img/icon/arr-left-black.svg");
+    font-family: icomoon !important;
+    color: black;
   }
 }
 
-.slick-next.slick-disabled {
-  &:before {
-    content: url("../../img/icon/arr-right-black.svg");
-  }
+.slick-prev.slick-disabled:before {
+  content: "\e90e";
+}
+
+.slick-next.slick-disabled:before {
+  content: "\e90d";
 }
 
 .slick-dots {
@@ -84,9 +88,6 @@
       height: 8px;
       border-radius: 50%;
       background-color: #C4C4C4;
-      &:before{
-        content: "";
-      }
       &:hover {
         background-color: $accent;
       }

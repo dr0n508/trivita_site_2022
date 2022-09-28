@@ -1666,23 +1666,30 @@
 .slick-next {
   right: 20px; }
   .slick-next:before {
-    content: url("../../img/icon/arr-right-white.svg"); }
+    content: "\e90d";
+    font-family: icomoon !important; }
 
 .slick-prev {
   left: -20px; }
   .slick-prev:before {
-    content: url("../../img/icon/arr-left-white.svg"); }
+    content: "\e90e";
+    font-family: icomoon !important; }
 
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
   opacity: 1;
   background-color: transparent; }
 
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  font-family: icomoon !important;
+  color: black; }
+
 .slick-prev.slick-disabled:before {
-  content: url("../../img/icon/arr-left-black.svg"); }
+  content: "\e90e"; }
 
 .slick-next.slick-disabled:before {
-  content: url("../../img/icon/arr-right-black.svg"); }
+  content: "\e90d"; }
 
 .slick-dots li button {
   width: 8px;
@@ -1690,8 +1697,6 @@
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background-color: #C4C4C4; }
-  .slick-dots li button:before {
-    content: ""; }
   .slick-dots li button:hover {
     background-color: #1B75BB; }
 
