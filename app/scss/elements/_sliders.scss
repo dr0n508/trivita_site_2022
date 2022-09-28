@@ -88,6 +88,9 @@
       height: 8px;
       border-radius: 50%;
       background-color: #C4C4C4;
+      &:before {
+        display: none;
+      }
       &:hover {
         background-color: $accent;
       }

@@ -192,13 +192,11 @@
   position: relative;
     &:before {
       position: absolute;
-      content: "";
+      content: "\e901";
+      font-family: icomoon !important;
+      font-size: 10px;
       top: 27px;
       right: 10px;
-      width: 12px;
-      height: 7px;
-      display: inline-block;
-      background: url("../img/icon/stroke.svg") 50% 50% no-repeat;
     }
 }
 .sub_menu {

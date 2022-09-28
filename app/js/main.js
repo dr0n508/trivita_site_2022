@@ -160,7 +160,7 @@ $('.slider-stories').slick({
 });
 
 $('.home-slider-blog').slick({
-    autoplay: false,
+    autoplay: true,
     dots: false,
     infinite: false,
     speed: 300,

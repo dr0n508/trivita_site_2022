@@ -1617,6 +1617,8 @@
   -webkit-border-radius: 50%;
           border-radius: 50%;
   background-color: #C4C4C4; }
+  .slick-dots li button:before {
+    display: none; }
   .slick-dots li button:hover {
     background-color: #1B75BB; }
 
@@ -1988,13 +1990,11 @@
   position: relative; }
   .nav .nav_item.has_child:before {
     position: absolute;
-    content: "";
+    content: "\e901";
+    font-family: icomoon !important;
+    font-size: 10px;
     top: 27px;
-    right: 10px;
-    width: 12px;
-    height: 7px;
-    display: inline-block;
-    background: url("../img/icon/stroke.svg") 50% 50% no-repeat; }
+    right: 10px; }
 
 .sub_menu {
   position: absolute;
